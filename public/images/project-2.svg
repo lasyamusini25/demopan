@@ -1,0 +1,32 @@
+<svg width="1400" height="1000" viewBox="0 0 1400 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="1000" fill="#1e2a1e"/>
+  <defs>
+    <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2d3e2d"/>
+      <stop offset="100%" stop-color="#1a251a"/>
+    </linearGradient>
+    <linearGradient id="floorG" x1="0" y1="700" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#141c14"/>
+      <stop offset="100%" stop-color="#0e140e"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky / background -->
+  <rect width="1400" height="550" fill="url(#skyG)"/>
+  <rect y="550" width="1400" height="450" fill="url(#floorG)"/>
+  <!-- Courtyard walls -->
+  <rect x="200" y="100" width="1000" height="450" fill="#1a2a1a" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Central void / opening -->
+  <rect x="550" y="180" width="300" height="280" fill="#2a4a2a"/>
+  <!-- Plant silhouettes -->
+  <ellipse cx="700" cy="300" rx="60" ry="80" fill="#1e3a1e" opacity="0.8"/>
+  <rect x="695" y="370" width="10" height="70" fill="#c5a46d" opacity="0.3"/>
+  <!-- Horizontal lines -->
+  <rect x="200" y="250" width="350" height="1" fill="#c5a46d" opacity="0.3"/>
+  <rect x="850" y="250" width="350" height="1" fill="#c5a46d" opacity="0.3"/>
+  <rect x="200" y="400" width="350" height="1" fill="#c5a46d" opacity="0.2"/>
+  <rect x="850" y="400" width="350" height="1" fill="#c5a46d" opacity="0.2"/>
+  <!-- Floor reflection -->
+  <rect x="550" y="550" width="300" height="200" fill="#233323" opacity="0.5"/>
+  <!-- Label -->
+  <text x="100" y="950" font-family="Georgia, serif" font-size="14" fill="#c5a46d" opacity="0.6" letter-spacing="4">URBAN COURTYARD HOUSE · KOKAPET</text>
+</svg>

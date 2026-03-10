@@ -1,0 +1,24 @@
+<svg width="1400" height="1000" viewBox="0 0 1400 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="1000" fill="#f0ece6"/>
+  <defs>
+    <linearGradient id="galleryG" x1="0" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f4f0ea"/>
+      <stop offset="100%" stop-color="#e8e2d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#galleryG)"/>
+  <!-- Gallery walls with art panels -->
+  <rect x="100" y="100" width="280" height="380" fill="#d8d0c4" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+  <rect x="120" y="120" width="240" height="340" fill="#c8bfb0"/>
+  <rect x="450" y="60" width="200" height="500" fill="#d0c8bc" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+  <rect x="720" y="100" width="320" height="280" fill="#dbd3c7" stroke="rgba(0,0,0,0.08)" stroke-width="1"/>
+  <rect x="1100" y="140" width="200" height="360" fill="#d4ccc0" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+  <!-- Floor -->
+  <rect x="0" y="680" width="1400" height="320" fill="#e4ddd4"/>
+  <line x1="0" y1="680" x2="1400" y2="680" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+  <!-- Accent lines -->
+  <rect x="100" y="490" width="280" height="2" fill="#c5a46d" opacity="0.4"/>
+  <rect x="720" y="390" width="320" height="2" fill="#c5a46d" opacity="0.4"/>
+  <!-- Label -->
+  <text x="100" y="950" font-family="Georgia, serif" font-size="14" fill="#999" letter-spacing="4">GALLERY RESIDENCE · GACHIBOWLI</text>
+</svg>

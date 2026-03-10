@@ -1,0 +1,34 @@
+<svg width="1400" height="1000" viewBox="0 0 1400 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="1000" fill="#101820"/>
+  <defs>
+    <linearGradient id="officeG" x1="0" y1="0" x2="1400" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1520"/>
+      <stop offset="60%" stop-color="#142030"/>
+      <stop offset="100%" stop-color="#0a1018"/>
+    </linearGradient>
+    <radialGradient id="lightPool" cx="700" cy="350" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#c5a46d" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#officeG)"/>
+  <rect width="1400" height="1000" fill="url(#lightPool)"/>
+  <!-- Ceiling grid -->
+  <line x1="0" y1="120" x2="1400" y2="120" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.2"/>
+  <line x1="0" y1="180" x2="1400" y2="180" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <!-- Vertical columns -->
+  <rect x="300" y="120" width="3" height="700" fill="#c5a46d" opacity="0.15"/>
+  <rect x="700" y="120" width="3" height="700" fill="#c5a46d" opacity="0.15"/>
+  <rect x="1100" y="120" width="3" height="700" fill="#c5a46d" opacity="0.15"/>
+  <!-- Workstation silhouettes -->
+  <rect x="180" y="500" width="280" height="180" rx="2" fill="#1a2a3a" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.3"/>
+  <rect x="560" y="480" width="280" height="200" rx="2" fill="#1a2a3a" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.3"/>
+  <rect x="940" y="500" width="280" height="180" rx="2" fill="#1a2a3a" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Pendant lights -->
+  <line x1="450" y1="120" x2="450" y2="320" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.5"/>
+  <ellipse cx="450" cy="330" rx="30" ry="10" fill="#c5a46d" opacity="0.3"/>
+  <line x1="950" y1="120" x2="950" y2="320" stroke="#c5a46d" stroke-width="0.5" stroke-opacity="0.5"/>
+  <ellipse cx="950" cy="330" rx="30" ry="10" fill="#c5a46d" opacity="0.3"/>
+  <!-- Label -->
+  <text x="100" y="950" font-family="Georgia, serif" font-size="14" fill="#c5a46d" opacity="0.6" letter-spacing="4">ATELIER OFFICE SUITE · HITEC CITY</text>
+</svg>
