@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Loader() {
   const [loading, setLoading] = useState(true);
@@ -67,20 +68,27 @@ export default function Loader() {
               Hyderabad, India
             </motion.p>
 
-            <div style={{ overflow: "hidden" }}>
-              <motion.h1
-                style={{
-                  fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
-                  fontSize: "clamp(2.5rem,5vw,4.5rem)",
-                  color: "#ffffff", fontWeight: 600,
-                  letterSpacing: "0.05em", lineHeight: 1, margin: 0,
-                }}
+            <div style={{ overflow: "hidden", display: "flex", justifyContent: "center" }}>
+              <motion.div
                 initial={{ y: "100%" }}
                 animate={{ y: "0%" }}
                 transition={{ duration: 0.9, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
               >
-                Pan Infra
-              </motion.h1>
+                <div style={{
+                  position: "relative",
+                  width: "clamp(200px, 40vw, 400px)",
+                  height: "clamp(60px, 12vw, 120px)",
+                  filter: "brightness(0) invert(1)" // Optional: makes logo white if it's a dark logo
+                }}>
+                  <Image
+                    src="/images/Pan-Infra-Logo.png.webp"
+                    alt="Pan Infra Logo"
+                    fill
+                    style={{ objectFit: "contain" }}
+                    priority
+                  />
+                </div>
+              </motion.div>
             </div>
 
             <motion.div
