@@ -14,7 +14,7 @@ export type BlogPost = {
     category: string;
 };
 
-export const BLOG_POSTS: BlogPost[] = [
+export const BLOG_POSTS: Omit<BlogPost, 'content'>[] = [
     {
         slug: "top-5-upcoming-areas-for-investment-in-hyderabad",
         title: "Top 5 Upcoming Areas for Real Estate Investment in Hyderabad (2026)",
