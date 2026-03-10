@@ -37,7 +37,7 @@ export default function Footer() {
               Premium Plots & Villas · Est. 2010
             </p>
             <p style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.4)", lineHeight: 1.7 }}>
-              Hyderabad's most trusted real estate developer. HMDA & DTCP approved plots, premium villas, and gated communities across all growth corridors.
+              Hyderabad&apos;s most trusted real estate developer. HMDA & DTCP approved plots, premium villas, and gated communities across all growth corridors.
             </p>
           </div>
 

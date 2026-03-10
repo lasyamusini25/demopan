@@ -45,6 +45,11 @@ export const defaultMetadata: Metadata = {
   creator: SITE.name,
   publisher: SITE.name,
   category: "Real Estate",
+  icons: {
+    icon: "/images/Pan-Infra-Logo.png.webp",
+    shortcut: "/images/Pan-Infra-Logo.png.webp",
+    apple: "/images/Pan-Infra-Logo.png.webp",
+  },
   robots: {
     index: true,
     follow: true,
