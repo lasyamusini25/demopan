@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, useMotionValue, AnimatePresence } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 import { Project } from "@/lib/constants";
 import Link from "next/link";

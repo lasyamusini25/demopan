@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function GoogleReviews() {
     return (
@@ -65,11 +66,14 @@ export default function GoogleReviews() {
                     transition={{ delay: 0.2 }}
                 >
                     <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg"
-                            alt="Google"
-                            style={{ width: "100px", filter: "brightness(0) invert(1)" }}
-                        />
+                        <div style={{ position: "relative", width: "100px", height: "40px" }}>
+                            <Image
+                                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_Logo.svg"
+                                alt="Google"
+                                fill
+                                style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }}
+                            />
+                        </div>
                     </div>
 
                     <div style={{ textAlign: "center" }}>
