@@ -12,6 +12,9 @@ export type Project = {
   area: string;
   description: string;
   gallery: string[];
+  highlights?: string[];
+  masterLayoutPdf?: string;
+  videos?: string[];
 };
 
 export const SITE = {
@@ -85,21 +88,21 @@ export const SERVICES = [
 export const TESTIMONIALS = [
   {
     quote:
-      "We bought a plot in Pan Meadows and the entire process was completely transparent. The team guided us through every step. Best investment we've made.",
+      "We bought a plot in the Janwada Project and the entire process was completely transparent. The team guided us through every step. Best investment we've made.",
     name: "R. Sharma",
-    role: "Plot Owner, Pan Meadows — Shadnagar",
+    role: "Plot Owner, Janwada Project",
   },
   {
     quote:
-      "Our villa in Pan Green Valley exceeded expectations. Premium construction quality, beautiful landscaping, and an amazing community to live in.",
+      "Our villa in Dukes Western County exceeded expectations. Premium construction quality, beautiful landscaping, and an amazing community to live in.",
     name: "K. Reddy",
-    role: "Villa Owner, Pan Green Valley — Mokila",
+    role: "Villa Owner, Dukes Western County — Mokila",
   },
   {
     quote:
-      "As an NRI investor, I was initially skeptical about buying property remotely. Pan Infra made it seamless with virtual tours and complete legal clarity.",
+      "As an NRI investor, I was initially skeptical about buying property remotely. Pan Infra made it seamless with Kakatiya Daimond Heights.",
     name: "S. Patel",
-    role: "NRI Investor, Kokapet",
+    role: "NRI Investor, Shadnagar",
   },
 ] as const;
 
@@ -130,111 +133,106 @@ export const TIMELINE = [
 
 export const PROJECTS: Project[] = [
   {
-    slug: "pan-meadows-shadnagar",
-    title: "Pan Meadows",
+    slug: "janwada-project",
+    title: "Janwada Project",
     category: "Residential Plots",
     coverImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
     heroImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1600",
-    location: "Shadnagar, Hyderabad",
+    location: "Janwada, Hyderabad",
     year: "2024",
     client: "Open for Booking",
-    area: "120 Acres · 800 Plots",
+    area: "85 Acres · 450 Plots",
     description:
-      "HMDA-approved premium residential plots along NH-44, offering 100–500 sq.yd options with all infrastructure, wide roads, and clear title deeds.",
+      "Premium residential plot development in the serene Janwada area. Features world-class amenities and excellent connectivity to the main growth corridors.",
     gallery: [
       "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200",
     ],
   },
   {
-    slug: "pan-green-valley-mokila",
-    title: "Pan Green Valley",
+    slug: "kakatiya-daimond-heights",
+    title: "Kakatiya Daimond Heights",
     category: "Gated Community",
     coverImage: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
     heroImage: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1600",
+    location: "Shadnagar, Hyderabad",
+    year: "2024",
+    client: "Open for Booking",
+    area: "110 Acres · 600 Plots",
+    description:
+      "A grand gated community offering a blend of luxury and nature. Experience elevated living with Kakatiya Daimond Heights.",
+    gallery: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
+    ],
+  },
+  {
+    slug: "dukes-urban-village",
+    title: "Dukes Urban Village",
+    category: "Gated Community",
+    coverImage: "/current/WhatsApp Image 2026-03-11 at 15.10.30.jpeg",
+    heroImage: "/current/WhatsApp Image 2026-03-11 at 15.10.31.jpeg",
+    location: "Tukkuguda, Hyderabad",
+    year: "2024",
+    client: "Open for Booking",
+    area: "90 Acres · 500 Plots",
+    description:
+      "Highway facing project. Urban living redefined in a village-like setting. Dukes Urban Village offers the perfect balance of modern comfort and natural beauty.",
+    gallery: [
+      "/current/WhatsApp Image 2026-03-11 at 15.10.29.jpeg",
+      "/current/WhatsApp Image 2026-03-11 at 15.10.30 (1).jpeg",
+      "/current/WhatsApp Image 2026-03-11 at 15.10.30.jpeg",
+      "/current/WhatsApp Image 2026-03-11 at 15.10.31 (1).jpeg",
+      "/current/WhatsApp Image 2026-03-11 at 15.10.31.jpeg",
+      "/current/WhatsApp Image 2026-03-11 at 15.10.32.jpeg",
+    ],
+    highlights: [
+      "L.V Prasad Eye Hospital - 5 mins",
+      "Samshabad international airport -20 mins",
+      "Symbiosis business management college - 8 mins",
+      "Shadnagar - 7 mins",
+      "Highway facing project",
+    ],
+    masterLayoutPdf: "/current/DUV_P1P2_28th Jan 26 Updated.pdf",
+    videos: [
+      "/current/WhatsApp Video 2026-03-11 at 15.10.29 (1).mp4",
+      "/current/WhatsApp Video 2026-03-11 at 15.10.29.mp4",
+      "/current/WhatsApp Video 2026-03-11 at 15.10.30 (1).mp4",
+      "/current/WhatsApp Video 2026-03-11 at 15.10.30.mp4",
+    ],
+  },
+  {
+    slug: "dukes-western-county",
+    title: "Dukes Western County",
+    category: "Premium Villas",
+    coverImage: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1600",
     location: "Mokila, Hyderabad",
     year: "2024",
     client: "Open for Booking",
-    area: "200 Acres · 1,200 Plots",
+    area: "75 Acres · 300 Villas",
     description:
-      "A premium gated community nestled in greenery near the Outer Ring Road, featuring clubhouse, Olympic swimming pool, amphitheatre, and 60% open space.",
+      "Exclusive premium villas in the heart of the western growth corridor. Dukes Western County is built for those who seek class and comfort.",
     gallery: [
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200",
-    ],
-  },
-  {
-    slug: "pan-heights-kokapet",
-    title: "Pan Heights",
-    category: "Premium Villas",
-    coverImage: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200",
-    heroImage: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1600",
-    location: "Kokapet, Hyderabad",
-    year: "2025",
-    client: "Open for Booking",
-    area: "50 Acres · 200 Villas",
-    description:
-      "Luxury 3 & 4 BHK independent villas in Kokapet's Financial District corridor — smart home automation, private gardens, and resort-style amenities.",
-    gallery: [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200",
-    ],
-  },
-  {
-    slug: "pan-golden-acres-adibatla",
-    title: "Pan Golden Acres",
-    category: "Residential Plots",
-    coverImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1600",
-    location: "Adibatla, Hyderabad",
-    year: "2023",
-    client: "Sold Out",
-    area: "80 Acres · 600 Plots",
-    description:
-      "DTCP-approved villa plots near ISRO, Adibatla — strategically located in the aerospace & defence industrial corridor with strong appreciation potential.",
-    gallery: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
     ],
   },
   {
-    slug: "pan-smart-city-tukkuguda",
-    title: "Pan Smart City",
-    category: "Gated Community",
+    slug: "dukes-county",
+    title: "Dukes County",
+    category: "Residential Plots",
     coverImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
     heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1600",
-    location: "Tukkuguda, Hyderabad",
-    year: "2025",
+    location: "Mokila, Hyderabad",
+    year: "2024",
     client: "Open for Booking",
-    area: "300 Acres · Integrated Township",
+    area: "120 Acres · 900 Plots",
     description:
-      "Hyderabad's most ambitious integrated township near Rajiv Gandhi International Airport — residential plots, villas, commercial spaces, and social infrastructure.",
+      "A sprawling residential plot project in Mokila. Dukes County is designed for long-term growth and high-quality living.",
     gallery: [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200",
-    ],
-  },
-  {
-    slug: "pan-commercial-park-gachibowli",
-    title: "Pan Commercial Park",
-    category: "Commercial",
-    coverImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-    heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600",
-    location: "Gachibowli, Hyderabad",
-    year: "2024",
-    client: "Open for Booking",
-    area: "15 Acres · Commercial Plots",
-    description:
-      "Prime commercial plots in Gachibowli's IT hub — ideal for office buildings, retail outlets, and mixed-use developments in Hyderabad's most active business zone.",
-    gallery: [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=1200",
     ],
   },
 ];
