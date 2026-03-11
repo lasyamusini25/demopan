@@ -40,10 +40,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <div style={{ maxWidth: "720px", margin: "0 auto", padding: "0 2rem" }}>
         <div style={{ marginBottom: "2.5rem" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem" }}>
-            <Link href="/blog" style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#c5a46d", textDecoration: "none" }}>
+            <Link href="/blog" style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22", textDecoration: "none" }}>
               ← Back to Insights
             </Link>
-            <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#c5a46d" }}>
+            <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22" }}>
               {post.category}
             </span>
           </div>
@@ -52,7 +52,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
             fontSize: "clamp(2rem, 5vw, 3.375rem)",
             fontWeight: 700,
-            color: "#111111",
+            color: "#005c97",
             lineHeight: 1.1,
             marginBottom: "1.5rem",
           }}>
@@ -72,7 +72,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               style={{ borderRadius: "50%", objectFit: "cover" }}
             />
             <div>
-              <span style={{ display: "block", color: "#111111", fontWeight: 500, fontSize: "0.95rem" }}>{post.author.name}</span>
+              <span style={{ display: "block", color: "#005c97", fontWeight: 500, fontSize: "0.95rem" }}>{post.author.name}</span>
               <span style={{ fontSize: "0.8rem", color: "#777" }}>{post.readTime} · {post.date}</span>
             </div>
             {/* Social Share */}
@@ -118,7 +118,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           href="/blog"
           style={{
             display: "flex", alignItems: "center", justifyContent: "center",
-            width: "100%", background: "#111111", color: "#ffffff",
+            width: "100%", background: "#005c97", color: "#ffffff",
             padding: "1rem", fontSize: "0.65rem", fontWeight: 700,
             letterSpacing: "0.2em", textTransform: "uppercase",
             textDecoration: "none", borderRadius: "2px",
@@ -141,7 +141,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         .blog-body li { margin-bottom: 1rem; }
         .blog-body strong { color: #111; font-weight: 700; }
         .blog-body blockquote {
-          border-left: 4px solid #c5a46d; padding-left: 1.5rem; margin-left: 0;
+          border-left: 4px solid #ee2e22; padding-left: 1.5rem; margin-left: 0;
           font-family: var(--font-playfair, "Playfair Display", Georgia, serif);
           font-size: 1.6rem; line-height: 1.4; color: #111;
           font-style: italic; margin-top: 3rem; margin-bottom: 3rem;

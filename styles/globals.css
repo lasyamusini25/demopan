@@ -2,11 +2,14 @@
 
 @theme {
   /* Colors */
-  --color-primary: #111111;
-  --color-accent: #c5a46d;
-  --color-accent-light: #d4b98a;
+  --color-primary: #005c97;
+  --color-accent: #ee2e22;
+  --color-accent-light: #f46b1d;
   --color-secondary: #777777;
   --color-surface: #f8f6f2;
+
+  --gradient-blue: linear-gradient(to right, #005c97, #1e96d3);
+  --gradient-orange: linear-gradient(to right, #ee2e22, #f99918);
 
   /* Fonts */
   --font-heading: var(--font-playfair), "Playfair Display", Georgia, serif;
@@ -46,6 +49,7 @@ html.lenis,
 html.lenis body {
   height: auto;
 }
+
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
 }
@@ -53,26 +57,38 @@ html.lenis body {
 /* ─── Scrollbar ─────────────────────────────────────── */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #c5a46d #f2f2f2;
+  scrollbar-color: #005c97 #f2f2f2;
 }
-*::-webkit-scrollbar { width: 3px; }
-*::-webkit-scrollbar-track { background: #f4f4f4; }
-*::-webkit-scrollbar-thumb { background: #c5a46d; border-radius: 2px; }
+
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #005c97;
+  border-radius: 2px;
+}
 
 /* ─── Selection ─────────────────────────────────────── */
 ::selection {
-  background: #c5a46d;
+  background: #005c97;
   color: #ffffff;
 }
 
 /* ─── Custom cursor ─────────────────────────────────── */
 @media (pointer: fine) {
-  * { cursor: none !important; }
+  * {
+    cursor: none !important;
+  }
 }
 
 /* ─── Focus ─────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid #c5a46d;
+  outline: 2px solid #005c97;
   outline-offset: 3px;
 }
 
@@ -80,33 +96,68 @@ html.lenis body {
 .font-heading {
   font-family: var(--font-playfair, "Playfair Display", Georgia, serif) !important;
 }
+
 .font-body {
   font-family: var(--font-inter, Inter, system-ui, sans-serif) !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+  text-wrap: balance;
+}
+
+button,
+.button,
+[role="button"] {
+  text-transform: uppercase !important;
+  letter-spacing: 0.15em !important;
+  font-weight: 700 !important;
+}
+
 /* ─── Image zoom ─────────────────────────────────────── */
-.img-zoom { overflow: hidden; }
+.img-zoom {
+  overflow: hidden;
+}
+
 .img-zoom .zoom-inner {
   transition: transform 0.85s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
 }
-.img-zoom:hover .zoom-inner { transform: scale(1.06); }
+
+.img-zoom:hover .zoom-inner {
+  transform: scale(1.06);
+}
 
 /* ─── Marquee ────────────────────────────────────────── */
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
+
 .marquee-track {
   animation: marquee 28s linear infinite;
   will-change: transform;
 }
 
 /* ─── Clip-path text reveal ─────────────────────────── */
-.clip-reveal { overflow: hidden; }
+.clip-reveal {
+  overflow: hidden;
+}
 
 /* ─── Text balance ───────────────────────────────────── */
-.text-balance { text-wrap: balance; }
+.text-balance {
+  text-wrap: balance;
+}
 
 /* ─── Services row hover (no Tailwind hover needed) ─── */
 .services-row {
@@ -117,38 +168,65 @@ html.lenis body {
 .page-enter {
   animation: pageIn 0.55s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
 @keyframes pageIn {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ─── Stagger children utility ──────────────────────── */
-.stagger-children > * {
+.stagger-children>* {
   opacity: 0;
   transform: translateY(24px);
   animation: fadeUp 0.75s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-.stagger-children > *:nth-child(1) { animation-delay: 0.05s; }
-.stagger-children > *:nth-child(2) { animation-delay: 0.12s; }
-.stagger-children > *:nth-child(3) { animation-delay: 0.19s; }
-.stagger-children > *:nth-child(4) { animation-delay: 0.26s; }
-.stagger-children > *:nth-child(5) { animation-delay: 0.33s; }
+
+.stagger-children>*:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.stagger-children>*:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.stagger-children>*:nth-child(3) {
+  animation-delay: 0.19s;
+}
+
+.stagger-children>*:nth-child(4) {
+  animation-delay: 0.26s;
+}
+
+.stagger-children>*:nth-child(5) {
+  animation-delay: 0.33s;
+}
 
 @keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ─── Horizontal rule utility ───────────────────────── */
-.rule-gold {
+.rule-brand {
   height: 1px;
-  background: linear-gradient(to right, #c5a46d, transparent);
+  background: var(--gradient-blue);
 }
 
-/* ─── Gold underline link ───────────────────────────── */
+/* ─── Brand underline link ───────────────────────────── */
 .link-underline {
   position: relative;
   text-decoration: none;
 }
+
 .link-underline::after {
   content: "";
   position: absolute;
@@ -156,45 +234,48 @@ html.lenis body {
   left: 0;
   width: 0;
   height: 1px;
-  background: #c5a46d;
+  background: #005c97;
   transition: width 0.3s ease;
 }
+
 .link-underline:hover::after {
   width: 100%;
 }
 
 /* ─── Server-safe hover link styles ─────────────────── */
-.link-gold-hover {
+.link-brand-hover {
   text-decoration: none;
   transition: color 0.25s, border-color 0.25s;
 }
-.link-gold-hover:hover {
-  color: #c5a46d !important;
-  border-color: #c5a46d !important;
+
+.link-brand-hover:hover {
+  color: #005c97 !important;
+  border-color: #005c97 !important;
 }
 
 .link-white-hover {
   text-decoration: none;
   transition: color 0.25s;
 }
+
 .link-white-hover:hover {
   color: #ffffff !important;
 }
 
-.btn-gold-hover {
-  transition: background 0.3s, color 0.3s, border-color 0.3s;
-}
-.btn-gold-hover:hover {
-  background: #c5a46d !important;
+.btn-brand-hover:hover {
+  background: #005c97 !important;
   color: #ffffff !important;
-  border-color: #c5a46d !important;
+  border-color: #005c97 !important;
 }
 
-.btn-dark-hover {
-  transition: background 0.3s;
+.btn-white-hover {
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
-.btn-dark-hover:hover {
-  background: #c5a46d !important;
+
+.btn-white-hover:hover {
+  background: #ffffff !important;
+  color: #005c97 !important;
+  border-color: #ffffff !important;
 }
 
 .img-zoom .zoom-inner {
@@ -210,22 +291,27 @@ html.lenis body {
 
 /* ─── Footer interactive elements ───────────────────── */
 .footer-cta-btn:hover {
-  background: #b8935a !important;
+  background: #1e96d3 !important;
 }
+
 .footer-view-btn:hover {
-  border-color: rgba(255,255,255,0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
   color: #ffffff !important;
 }
+
 .footer-nav-link:hover {
-  color: #c5a46d !important;
+  color: #ee2e22 !important;
 }
+
 .footer-service-link:hover {
-  color: rgba(255,255,255,0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
+
 .footer-contact-link:hover {
-  color: #c5a46d !important;
+  color: #ee2e22 !important;
 }
+
 .footer-social-btn:hover {
-  border-color: #c5a46d !important;
-  color: #c5a46d !important;
+  border-color: #ee2e22 !important;
+  color: #ee2e22 !important;
 }

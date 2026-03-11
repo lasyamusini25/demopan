@@ -23,7 +23,7 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
         }}>
           <motion.p
             style={{
-              fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d",
+              fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22",
               textTransform: "uppercase", marginBottom: "1.5rem",
             }}
             initial={{ opacity: 0, y: 10 }}
@@ -38,7 +38,7 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2.5rem,5.5vw,4.5rem)",
               lineHeight: 1,
-              color: "#111111",
+              color: "#005c97",
               marginBottom: "2.5rem",
             }}
             initial={{ opacity: 0, y: 24 }}
@@ -58,19 +58,19 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
               href="/projects"
               style={{
                 fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase",
-                textDecoration: "none", color: "#111111",
-                borderBottom: "1px solid #111111", paddingBottom: "3px",
+                textDecoration: "none", color: "#005c97",
+                borderBottom: "1px solid #005c97", paddingBottom: "3px",
                 transition: "all 0.3s ease",
                 display: "inline-block",
                 fontWeight: 600,
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.color = "#c5a46d";
-                e.currentTarget.style.borderBottomColor = "#c5a46d";
+                e.currentTarget.style.color = "#ee2e22";
+                e.currentTarget.style.borderBottomColor = "#ee2e22";
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.color = "#111111";
-                e.currentTarget.style.borderBottomColor = "#111111";
+                e.currentTarget.style.color = "#005c97";
+                e.currentTarget.style.borderBottomColor = "#005c97";
               }}
             >
               View All Projects →
@@ -121,13 +121,13 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
             style={{
               fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
               textDecoration: "none", color: "#ffffff",
-              background: "#111111", padding: "1.25rem 2.5rem",
+              background: "#005c97", padding: "1.25rem 2.5rem",
               transition: "all 0.3s ease",
               display: "inline-block",
               fontWeight: 600,
             }}
-            onMouseEnter={e => { e.currentTarget.style.background = "#c5a46d"; }}
-            onMouseLeave={e => { e.currentTarget.style.background = "#111111"; }}
+            onMouseEnter={e => { e.currentTarget.style.background = "#ee2e22"; }}
+            onMouseLeave={e => { e.currentTarget.style.background = "#005c97"; }}
           >
             See All Projects
           </Link>

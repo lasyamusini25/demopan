@@ -34,7 +34,7 @@ export default function AboutPage() {
       />
       {/* Dark hero */}
       <section style={{
-        background: "#111111",
+        background: "#005c97",
         padding: "10rem 2.5rem 7rem",
         overflow: "hidden",
         position: "relative",
@@ -48,9 +48,9 @@ export default function AboutPage() {
         }} />
         <div style={{ maxWidth: "800px", margin: "0 auto", position: "relative", textAlign: "center" }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", marginBottom: "2.5rem" }}>
-            <div style={{ width: "28px", height: "1px", background: "#c5a46d" }} />
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase" }}>About Pan Infra</p>
-            <div style={{ width: "28px", height: "1px", background: "#c5a46d" }} />
+            <div style={{ width: "28px", height: "1px", background: "#ffffff" }} />
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ffffff", textTransform: "uppercase" }}>About Pan Infra</p>
+            <div style={{ width: "28px", height: "1px", background: "#ffffff" }} />
           </div>
           <h1 style={{
             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
@@ -74,11 +74,11 @@ export default function AboutPage() {
         textAlign: "center",
       }}>
         <div style={{ marginBottom: "5rem" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}>Our Mission</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>Our Mission</p>
           <h2 style={{
             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
             fontSize: "clamp(2.2rem,5vw,3.75rem)",
-            lineHeight: 1.1, color: "#111111", marginBottom: "2.5rem",
+            lineHeight: 1.1, color: "#005c97", marginBottom: "2.5rem",
           }}>
             Real Estate That Builds Real Wealth
           </h2>
@@ -91,8 +91,8 @@ export default function AboutPage() {
           <div style={{ display: "flex", gap: "4rem", flexWrap: "wrap", justifyContent: "center" }}>
             {[{ n: "1,000+", l: "Families" }, { n: "800+", l: "Acres" }, { n: "15+", l: "Projects" }].map(s => (
               <div key={s.l} style={{ textAlign: "center" }}>
-                <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#111111", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
-                <div style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#c5a46d", marginTop: "0.5rem" }}>{s.l}</div>
+                <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#005c97", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
+                <div style={{ fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "#ee2e22", marginTop: "0.5rem" }}>{s.l}</div>
               </div>
             ))}
           </div>
@@ -107,11 +107,11 @@ export default function AboutPage() {
           <div style={{
             position: "absolute", top: "2rem", right: "2rem",
             background: "rgba(17,17,17,0.9)", backdropFilter: "blur(12px)",
-            border: "1px solid rgba(197,164,109,0.3)",
+            border: "1px solid rgba(238, 46, 34,0.3)",
             padding: "1.25rem 1.5rem", textAlign: "center",
             borderRadius: "0.5rem",
           }}>
-            <span style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.25rem", color: "#c5a46d", lineHeight: 1 }}>2010</span>
+            <span style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.25rem", color: "#ee2e22", lineHeight: 1 }}>2010</span>
             <p style={{ fontSize: "0.5rem", letterSpacing: "0.25em", color: "rgba(255,255,255,0.5)", textTransform: "uppercase", marginTop: "0.3rem" }}>Est.</p>
           </div>
         </div>
@@ -124,11 +124,11 @@ export default function AboutPage() {
       <section style={{ background: "#f8f6f2", padding: "7rem 2.5rem" }} aria-label="Team">
         <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
           <div style={{ marginBottom: "5rem" }}>
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}>The Leadership</p>
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>The Leadership</p>
             <h2 style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2.2rem,5vw,4.5rem)",
-              lineHeight: 1, color: "#111111",
+              lineHeight: 1, color: "#005c97",
             }}>
               Driven by Experience
             </h2>
@@ -144,11 +144,11 @@ export default function AboutPage() {
       {/* Timeline */}
       <section style={{ maxWidth: "900px", margin: "0 auto", padding: "10rem 2.5rem" }} aria-label="Timeline">
         <div style={{ textAlign: "center", marginBottom: "6rem" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}>Our Journey</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>Our Journey</p>
           <h2 style={{
             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
             fontSize: "clamp(2.2rem,5vw,3.75rem)",
-            lineHeight: 1, color: "#111111",
+            lineHeight: 1, color: "#005c97",
           }}>
             Company Milestones
           </h2>
@@ -165,7 +165,7 @@ export default function AboutPage() {
               }}>
                 <p style={{
                   fontFamily: "var(--font-playfair,Georgia,serif)",
-                  fontSize: "1.5rem", color: "#c5a46d", fontWeight: 600,
+                  fontSize: "1.5rem", color: "#ee2e22", fontWeight: 600,
                   lineHeight: 1,
                 }}>{item.year}</p>
                 <p style={{ fontSize: "1.05rem", color: "#555555", lineHeight: 1.85 }}>{item.text}</p>
@@ -176,8 +176,8 @@ export default function AboutPage() {
       </section>
 
       {/* CTA band */}
-      <section style={{ background: "#111111", padding: "6rem 2.5rem", textAlign: "center" }}>
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}>Book a Site Visit</p>
+      <section style={{ background: "#005c97", padding: "6rem 2.5rem", textAlign: "center" }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "rgba(255,255,255,0.7)", textTransform: "uppercase", marginBottom: "1.5rem" }}>Book a Site Visit</p>
         <h2 style={{
           fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
           fontSize: "clamp(2rem,4.5vw,3.75rem)",
@@ -187,12 +187,12 @@ export default function AboutPage() {
         </h2>
         <Link
           href="/contact"
-          className="btn-gold-hover"
+          className="btn-white-hover"
           style={{
             display: "inline-flex", alignItems: "center",
             fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
             textDecoration: "none", padding: "1rem 2.25rem",
-            border: "1px solid #c5a46d", color: "#c5a46d",
+            border: "1px solid #ffffff", color: "#ffffff",
           }}
         >
           Contact Us Today →

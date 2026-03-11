@@ -23,7 +23,7 @@ export default function Hero() {
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
-        background: "#0c0c0c",
+        background: "#005c97",
       }}
       aria-label="Hero section"
     >
@@ -83,7 +83,7 @@ export default function Hero() {
             left: "2.5rem",
             width: "1px",
             height: "120px",
-            background: "linear-gradient(to bottom, #c5a46d, transparent)",
+            background: "linear-gradient(to bottom, #005c97, transparent)",
             transformOrigin: "top",
           }}
           initial={{ scaleY: 0 }}
@@ -101,7 +101,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <div style={{ width: "28px", height: "1px", background: "#c5a46d" }} />
+            <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
             <p style={{
               fontSize: "0.6rem",
               letterSpacing: "0.45em",
@@ -146,7 +146,7 @@ export default function Hero() {
             {/* Accent word in gold */}
             <span style={{ display: "block", overflow: "hidden", paddingBottom: "0.15em" }}>
               <motion.span
-                style={{ display: "block", color: "#c5a46d", fontStyle: "italic" }}
+                style={{ display: "block", color: "#ee2e22", fontStyle: "italic", textTransform: "uppercase", fontWeight: 800 }}
                 initial={{ y: "105%", opacity: 0 }}
                 animate={{ y: "0%", opacity: 1 }}
                 transition={{ duration: 1, delay: 0.95, ease: [0.16, 1, 0.3, 1] }}
@@ -183,52 +183,55 @@ export default function Hero() {
 
             <div style={{ display: "flex", alignItems: "center", gap: "1.25rem", flexWrap: "wrap" }}>
               <a
-                href={`tel:${SITE.phone}`}
+                href={SITE.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.3em",
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.25em",
                   textTransform: "uppercase",
                   color: "#ffffff",
                   textDecoration: "none",
-                  background: "#c5a46d",
-                  padding: "0.9rem 2rem",
+                  background: "linear-gradient(90deg, #ee2e22 0%, #f99918 100%)",
+                  padding: "1.2rem 2.5rem",
                   transition: "all 0.35s",
                   display: "inline-flex",
                   alignItems: "center",
-                  gap: "0.5rem",
-                  fontWeight: 600,
+                  gap: "0.6rem",
+                  fontWeight: 800,
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#b8935a";
+                  e.currentTarget.style.opacity = "0.9";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "#c5a46d";
+                  e.currentTarget.style.opacity = "1";
                 }}
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                 </svg>
-                Book Site Visit
+                WhatsApp Us
               </a>
               <Link
                 href="/projects"
                 style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.3em",
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.25em",
                   textTransform: "uppercase",
-                  color: "#c5a46d",
+                  color: "#ffffff",
                   textDecoration: "none",
-                  border: "1px solid #c5a46d",
-                  padding: "0.9rem 2rem",
+                  background: "linear-gradient(90deg, #005c97 0%, #1e96d3 100%)",
+                  padding: "1.2rem 2.5rem",
                   transition: "all 0.35s",
                   display: "inline-block",
-                  background: "transparent",
+                  border: "none",
+                  fontWeight: 800,
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "rgba(197,164,109,0.1)";
+                  e.currentTarget.style.opacity = "0.9";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.opacity = "1";
                 }}
               >
                 View Projects
@@ -236,16 +239,17 @@ export default function Hero() {
               <Link
                 href="/contact"
                 style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.3em",
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.25em",
                   textTransform: "uppercase",
-                  color: "rgba(255,255,255,0.6)",
+                  color: "rgba(255,255,255,0.8)",
                   textDecoration: "none",
                   transition: "color 0.25s",
                   display: "inline-block",
+                  fontWeight: 800,
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.color = "#ffffff"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(255,255,255,0.6)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.color = "rgba(255,255,255,0.8)"; }}
               >
                 Enquire →
               </Link>
@@ -277,7 +281,7 @@ export default function Hero() {
             marginBottom: "0.5rem",
           }}>Scroll</p>
           <motion.div
-            style={{ width: "1px", height: "56px", background: "#c5a46d", transformOrigin: "top" }}
+            style={{ width: "1px", height: "56px", background: "#005c97", transformOrigin: "top" }}
             animate={{ scaleY: [1, 0, 1] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           />
@@ -301,10 +305,10 @@ export default function Hero() {
         <div style={{
           background: "rgba(0,0,0,0.55)",
           backdropFilter: "blur(12px)",
-          border: "1px solid rgba(197,164,109,0.3)",
+          border: "1px solid rgba(0, 92, 151, 0.3)",
           padding: "1.5rem 2rem",
         }}>
-          <p style={{ fontSize: "0.55rem", letterSpacing: "0.4em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "0.5rem" }}>Est.</p>
+          <p style={{ fontSize: "0.55rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "0.5rem" }}>Est.</p>
           <p style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#ffffff", lineHeight: 1, fontWeight: 600 }}>2010</p>
         </div>
       </motion.div>
@@ -338,7 +342,7 @@ export default function Hero() {
               <span style={{
                 fontFamily: "var(--font-playfair, Georgia, serif)",
                 fontSize: "1.6rem",
-                color: "#c5a46d",
+                color: "#ee2e22",
                 fontWeight: 600,
                 lineHeight: 1,
               }}>{stat.num}</span>

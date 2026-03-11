@@ -20,7 +20,7 @@ export default function MarqueeStrip() {
   return (
     <div
       style={{
-        background: "#c5a46d",
+        background: "#ee2e22",
         padding: "1.25rem 0",
         overflow: "hidden",
         display: "flex",

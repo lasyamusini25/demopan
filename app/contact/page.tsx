@@ -28,9 +28,9 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section style={{ background: "#111111", padding: "10rem 2.5rem 6rem", textAlign: "center" }}>
+      <section style={{ background: "#005c97", padding: "10rem 2.5rem 6rem", textAlign: "center" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "2rem" }}>Get In Touch</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "2rem" }}>Get In Touch</p>
           <h1 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(2.5rem,6vw,5rem)", lineHeight: 1, color: "#ffffff" }}>
             Let&apos;s Find Your Perfect Property
           </h1>
@@ -41,7 +41,7 @@ export default function ContactPage() {
       <section style={{ maxWidth: "1280px", margin: "0 auto", padding: "5rem 2.5rem", display: "grid", gridTemplateColumns: "1fr", gap: "4rem" }} className="md:grid-cols-2">
         {/* Info */}
         <div>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.35em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "2rem" }}>Corporate Office</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.35em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "2rem" }}>Corporate Office</p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "1.75rem", marginBottom: "3rem" }}>
             {[
@@ -52,9 +52,9 @@ export default function ContactPage() {
               <div key={item.label}>
                 <p style={{ fontSize: "0.6rem", letterSpacing: "0.25em", textTransform: "uppercase", color: "#999999", marginBottom: "0.35rem" }}>{item.label}</p>
                 {item.href ? (
-                  <a href={item.href} style={{ fontSize: "1rem", color: "#111111", textDecoration: "none" }}>{item.value}</a>
+                  <a href={item.href} style={{ fontSize: "1rem", color: "#005c97", textDecoration: "none" }}>{item.value}</a>
                 ) : (
-                  <p style={{ fontSize: "1rem", color: "#111111" }}>{item.value}</p>
+                  <p style={{ fontSize: "1rem", color: "#005c97" }}>{item.value}</p>
                 )}
               </div>
             ))}

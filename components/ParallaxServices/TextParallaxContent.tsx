@@ -87,7 +87,7 @@ const OverlayCopy = ({ subheading, heading }: { subheading: string; heading: str
             ref={targetRef}
             className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center text-white p-4"
         >
-            <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl font-light tracking-widest uppercase" style={{ color: "#c5a46d" }}>
+            <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl font-light tracking-widest uppercase" style={{ color: "#ee2e22" }}>
                 {subheading}
             </p>
             <p className="text-center text-4xl font-bold md:text-7xl" style={{ fontFamily: "var(--font-playfair, serif)" }}>{heading}</p>

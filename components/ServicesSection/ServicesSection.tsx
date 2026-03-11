@@ -9,11 +9,11 @@ import { ReactNode } from "react";
 const icons = ["◈", "⬡", "◎", "◉", "⬢"];
 
 const gradients = [
-  "linear-gradient(135deg, #c5a46d 0%, #a8893d 100%)",
+  "linear-gradient(135deg, #ee2e22 0%, #a8893d 100%)",
   "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
-  "linear-gradient(135deg, #c5a46d 0%, #d4b97a 100%)",
+  "linear-gradient(135deg, #ee2e22 0%, #d4b97a 100%)",
   "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
-  "linear-gradient(135deg, #c5a46d 0%, #a8893d 100%)",
+  "linear-gradient(135deg, #ee2e22 0%, #a8893d 100%)",
 ];
 
 const cardSpans = [
@@ -29,7 +29,7 @@ function BounceCard({ className, children }: { className: string; children: Reac
     <CardContainer containerClassName={className} className="w-full h-full min-h-[260px]">
       <CardBody
         className="group relative h-full w-full cursor-pointer rounded-2xl p-8 flex flex-col items-center justify-center text-center"
-        style={{ background: "#1a1714", border: "1px solid rgba(197,164,109,0.15)" }}
+        style={{ background: "#1a1714", border: "1px solid rgba(238, 46, 34,0.15)" }}
       >
         {children}
       </CardBody>
@@ -43,9 +43,9 @@ function CardTitle({ children, index }: { children: ReactNode; index: number }) 
       <div style={{
         width: "60px", height: "60px", flexShrink: 0,
         display: "flex", alignItems: "center", justifyContent: "center",
-        border: "1px solid rgba(197,164,109,0.3)",
-        background: "rgba(197,164,109,0.08)",
-        color: "#c5a46d", fontSize: "1.75rem", borderRadius: "1rem",
+        border: "1px solid rgba(238, 46, 34,0.3)",
+        background: "rgba(238, 46, 34,0.08)",
+        color: "#ee2e22", fontSize: "1.75rem", borderRadius: "1rem",
         transition: "transform 0.4s ease",
       }} className="group-hover:scale-110">
         {icons[index]}
@@ -73,7 +73,7 @@ export default function ServicesSection() {
           maxWidth: "800px", margin: "0 auto 6rem",
         }}>
           <motion.p
-            style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}
+            style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}
             initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           >
             Our Properties
@@ -82,7 +82,7 @@ export default function ServicesSection() {
             style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2.5rem,5.5vw,4.5rem)",
-              lineHeight: 1, color: "#111111", marginBottom: "2.5rem",
+              lineHeight: 1, color: "#005c97", marginBottom: "2.5rem",
             }}
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
           >
@@ -98,14 +98,14 @@ export default function ServicesSection() {
               href="/why-paninfra"
               style={{
                 fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase",
-                textDecoration: "none", color: "#111111",
-                borderBottom: "1px solid #111111", paddingBottom: "3px",
+                textDecoration: "none", color: "#005c97",
+                borderBottom: "1px solid #005c97", paddingBottom: "3px",
                 transition: "all 0.3s ease",
                 display: "inline-block",
                 fontWeight: 600,
               }}
-              onMouseEnter={e => { e.currentTarget.style.color = "#c5a46d"; e.currentTarget.style.borderBottomColor = "#c5a46d"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.borderBottomColor = "#111111"; }}
+              onMouseEnter={e => { e.currentTarget.style.color = "#ee2e22"; e.currentTarget.style.borderBottomColor = "#ee2e22"; }}
+              onMouseLeave={e => { e.currentTarget.style.color = "#005c97"; e.currentTarget.style.borderBottomColor = "#005c97"; }}
             >
               Why Pan Infra →
             </Link>
@@ -118,7 +118,7 @@ export default function ServicesSection() {
             <BounceCard key={service.title} className={cardSpans[idx]}>
               <CardItem translateZ={30} as="span" style={{
                 fontFamily: "var(--font-playfair,Georgia,serif)",
-                fontSize: "0.85rem", color: "rgba(197,164,109,0.3)",
+                fontSize: "0.85rem", color: "rgba(238, 46, 34,0.3)",
                 letterSpacing: "0.08em", position: "absolute", top: "2rem", right: "2rem",
               }}>
                 {String(idx + 1).padStart(2, "0")}
@@ -161,7 +161,7 @@ export default function ServicesSection() {
             <BounceCard key={service.title} className={cardSpans[idx + 2]}>
               <CardItem translateZ={30} as="span" style={{
                 fontFamily: "var(--font-playfair,Georgia,serif)",
-                fontSize: "0.85rem", color: "rgba(197,164,109,0.3)",
+                fontSize: "0.85rem", color: "rgba(238, 46, 34,0.3)",
                 letterSpacing: "0.08em", position: "absolute", top: "2rem", right: "2rem",
               }}>
                 {String(idx + 3).padStart(2, "0")}
@@ -205,7 +205,7 @@ export default function ServicesSection() {
               <BounceCard key={service.title} className={cardSpans[4]}>
                 <CardItem translateZ={30} as="span" style={{
                   fontFamily: "var(--font-playfair,Georgia,serif)",
-                  fontSize: "0.85rem", color: "rgba(197,164,109,0.3)",
+                  fontSize: "0.85rem", color: "rgba(238, 46, 34,0.3)",
                   letterSpacing: "0.08em", position: "absolute", top: "2rem", right: "2rem",
                 }}>
                   {String(idx + 5).padStart(2, "0")}

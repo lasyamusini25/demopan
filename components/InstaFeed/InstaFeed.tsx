@@ -18,19 +18,19 @@ export default function InstaFeed() {
 
                 {/* Header */}
                 <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-                    <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", color: "#c5a46d", textTransform: "uppercase", fontWeight: 700, marginBottom: "1rem" }}>
+                    <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", color: "#ee2e22", textTransform: "uppercase", fontWeight: 700, marginBottom: "1rem" }}>
                         Follow Us On Instagram
                     </p>
                     <h2 style={{
                         fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
                         fontSize: "clamp(2rem, 5vw, 3.75rem)",
-                        color: "#111111",
+                        color: "#005c97",
                         marginBottom: "1.5rem",
                         lineHeight: 1,
                     }}>
                         @paninfra
                     </h2>
-                    <div style={{ width: "80px", height: "1px", background: "#c5a46d", margin: "0 auto" }} />
+                    <div style={{ width: "80px", height: "1px", background: "#ee2e22", margin: "0 auto" }} />
                 </div>
 
                 {/* Embed — centered */}

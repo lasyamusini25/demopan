@@ -51,7 +51,7 @@ export default function ContactForm() {
       aria-label="Contact form"
       style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
     >
-      <p style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "1.5rem", color: "#111111", marginBottom: "0.5rem" }}>
+      <p style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "1.5rem", color: "#005c97", marginBottom: "0.5rem" }}>
         Send Us a Message
       </p>
 
@@ -60,7 +60,7 @@ export default function ContactForm() {
         <input
           name="name" required
           style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "#c5a46d")}
+          onFocus={e => (e.target.style.borderColor = "#ee2e22")}
           onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.15)")}
         />
       </label>
@@ -70,7 +70,7 @@ export default function ContactForm() {
         <input
           type="email" name="email" required
           style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "#c5a46d")}
+          onFocus={e => (e.target.style.borderColor = "#ee2e22")}
           onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.15)")}
         />
       </label>
@@ -80,7 +80,7 @@ export default function ContactForm() {
         <input
           name="phone"
           style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "#c5a46d")}
+          onFocus={e => (e.target.style.borderColor = "#ee2e22")}
           onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.15)")}
         />
       </label>
@@ -90,7 +90,7 @@ export default function ContactForm() {
         <textarea
           name="message" required rows={5}
           style={{ ...inputStyle, resize: "vertical" }}
-          onFocus={e => (e.target.style.borderColor = "#c5a46d")}
+          onFocus={e => (e.target.style.borderColor = "#ee2e22")}
           onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.15)")}
         />
       </label>
@@ -99,17 +99,18 @@ export default function ContactForm() {
         type="submit"
         disabled={status === "sending" || status === "done"}
         style={{
-          padding: "0.85rem 2rem",
-          background: "#c5a46d",
+          padding: "1.1rem 2.5rem",
+          background: "#ee2e22",
           color: "#ffffff",
           border: "none",
-          fontSize: "0.65rem",
-          letterSpacing: "0.2em",
+          fontSize: "0.75rem",
+          letterSpacing: "0.22em",
           textTransform: "uppercase",
           cursor: status === "done" ? "default" : "pointer",
           transition: "background 0.25s",
           fontFamily: "inherit",
           alignSelf: "flex-start",
+          fontWeight: 800,
         }}
       >
         {status === "sending" ? "Sending..." : status === "done" ? "Message Sent ✓" : "Send Message →"}

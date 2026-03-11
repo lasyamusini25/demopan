@@ -116,7 +116,7 @@ const Dots = ({ images, imgIndex, setImgIndex }: { images: string[]; imgIndex: n
                         style={{
                             transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
                         }}
-                        className={`h-2 rounded-full ${idx === imgIndex ? "bg-[#c5a46d] w-8" : "bg-neutral-600 w-2 hover:bg-neutral-400"
+                        className={`h-2 rounded-full ${idx === imgIndex ? "bg-[#ee2e22] w-8" : "bg-neutral-600 w-2 hover:bg-neutral-400"
                             }`}
                     />
                 );

@@ -41,24 +41,24 @@ export default function Loader() {
             style={{
               position: "absolute", top: 0, left: 0,
               height: "2px",
-              background: "linear-gradient(to right, #c5a46d, #d4b98a)",
+              background: "linear-gradient(to right, #ee2e22, #f46b1d)",
               width: `${pct}%`,
               transition: "width 0.05s linear",
             }}
           />
 
           {/* Corner brackets */}
-          <motion.div style={{ position: "absolute", top: "2rem", left: "2rem", width: "28px", height: "28px", borderTop: "1px solid rgba(197,164,109,0.35)", borderLeft: "1px solid rgba(197,164,109,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} />
-          <motion.div style={{ position: "absolute", top: "2rem", right: "2rem", width: "28px", height: "28px", borderTop: "1px solid rgba(197,164,109,0.35)", borderRight: "1px solid rgba(197,164,109,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25 }} />
-          <motion.div style={{ position: "absolute", bottom: "2rem", left: "2rem", width: "28px", height: "28px", borderBottom: "1px solid rgba(197,164,109,0.35)", borderLeft: "1px solid rgba(197,164,109,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} />
-          <motion.div style={{ position: "absolute", bottom: "2rem", right: "2rem", width: "28px", height: "28px", borderBottom: "1px solid rgba(197,164,109,0.35)", borderRight: "1px solid rgba(197,164,109,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35 }} />
+          <motion.div style={{ position: "absolute", top: "2rem", left: "2rem", width: "28px", height: "28px", borderTop: "1px solid rgba(238, 46, 34,0.35)", borderLeft: "1px solid rgba(238, 46, 34,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} />
+          <motion.div style={{ position: "absolute", top: "2rem", right: "2rem", width: "28px", height: "28px", borderTop: "1px solid rgba(238, 46, 34,0.35)", borderRight: "1px solid rgba(238, 46, 34,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.25 }} />
+          <motion.div style={{ position: "absolute", bottom: "2rem", left: "2rem", width: "28px", height: "28px", borderBottom: "1px solid rgba(238, 46, 34,0.35)", borderLeft: "1px solid rgba(238, 46, 34,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} />
+          <motion.div style={{ position: "absolute", bottom: "2rem", right: "2rem", width: "28px", height: "28px", borderBottom: "1px solid rgba(238, 46, 34,0.35)", borderRight: "1px solid rgba(238, 46, 34,0.35)" }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35 }} />
 
           {/* Center content */}
           <div style={{ textAlign: "center" }}>
             <motion.p
               style={{
                 fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
-                fontSize: "0.6rem", letterSpacing: "0.55em", color: "#c5a46d",
+                fontSize: "0.6rem", letterSpacing: "0.55em", color: "#ee2e22",
                 textTransform: "uppercase", marginBottom: "1.25rem",
               }}
               initial={{ opacity: 0, y: 8 }}
@@ -94,7 +94,7 @@ export default function Loader() {
             <motion.div
               style={{
                 margin: "1.75rem auto 1.5rem", height: "1px",
-                background: "rgba(197,164,109,0.3)", width: "80px",
+                background: "rgba(238, 46, 34,0.3)", width: "80px",
                 transformOrigin: "center",
               }}
               initial={{ scaleX: 0 }}

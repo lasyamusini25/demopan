@@ -26,7 +26,7 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
         style={{ textDecoration: "none", display: "block" }}
       >
         <div
-          style={{ position: "relative", overflow: "hidden", background: "#0c0c0c" }}
+          style={{ position: "relative", overflow: "hidden", background: "#005c97" }}
           className="group"
         >
           {/* Image */}
@@ -65,13 +65,13 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
               <span style={{
                 fontSize: "0.55rem",
                 letterSpacing: "0.38em",
-                color: "#c5a46d",
+                color: "#ee2e22",
                 textTransform: "uppercase",
                 background: "rgba(12,12,12,0.6)",
                 backdropFilter: "blur(12px)",
-                border: "1px solid rgba(197,164,109,0.25)",
-                padding: "0.4rem 0.9rem",
-                fontWeight: 600,
+                border: "1px solid rgba(238, 46, 34,0.25)",
+                padding: "0.5rem 1.1rem",
+                fontWeight: 800,
               }}>
                 {project.category}
               </span>
@@ -99,11 +99,12 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
             >
               <h3 style={{
                 fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
-                fontSize: featured ? "clamp(2rem, 3.5vw, 3rem)" : "1.5rem",
+                fontSize: featured ? "clamp(2.2rem, 4vw, 3.5rem)" : "1.75rem",
                 color: "#ffffff",
                 lineHeight: 1.1,
                 marginBottom: "0.75rem",
                 transition: "color 0.4s",
+                fontWeight: 800,
               }}>
                 {project.title}
               </h3>
@@ -114,11 +115,11 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
               }}
                 className="group-hover:opacity-100"
               >
-                <span style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.8)", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+                <span style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 700 }}>
                   {project.location}
                 </span>
-                <span style={{ width: "4px", height: "1px", background: "#c5a46d", flexShrink: 0 }} />
-                <span style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.8)", letterSpacing: "0.15em", textTransform: "uppercase" }}>{project.year}</span>
+                <span style={{ width: "6px", height: "1px", background: "#ee2e22", flexShrink: 0 }} />
+                <span style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 700 }}>{project.year}</span>
               </div>
             </div>
 
@@ -140,7 +141,7 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
                 gap: "0.75rem",
               }}>
                 View Case Study
-                <span style={{ width: "20px", height: "1px", background: "#c5a46d" }} />
+                <span style={{ width: "20px", height: "1px", background: "#ee2e22" }} />
               </span>
             </div>
           </div>

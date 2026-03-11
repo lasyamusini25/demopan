@@ -100,11 +100,11 @@ export default function WhyPanInfraPage() {
       {/* ── Page header ───────────────────────────── */}
       <section
         style={{
-          background: "#111111",
+          background: "#005c97",
           padding: "10rem 2.5rem 6rem",
           position: "relative",
           overflow: "hidden",
-          borderBottom: "1px solid rgba(197,164,109,0.15)",
+          borderBottom: "1px solid rgba(238, 46, 34,0.15)",
         }}
       >
         <div
@@ -120,8 +120,8 @@ export default function WhyPanInfraPage() {
         />
         <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem" }}>
-            <div style={{ width: "28px", height: "1px", background: "#c5a46d" }} />
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase" }}>
+            <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase" }}>
               Our Properties
             </p>
           </div>
@@ -159,7 +159,7 @@ export default function WhyPanInfraPage() {
                 className="relative"
                 style={{
                   background: "#1a1a1a",
-                  border: "1px solid rgba(197,164,109,0.15)",
+                  border: "1px solid rgba(238, 46, 34,0.15)",
                   width: "320px",
                   height: "auto",
                 }}
@@ -186,7 +186,7 @@ export default function WhyPanInfraPage() {
                   style={{ padding: "1.5rem 1.5rem 0" }}
                 >
                   <div style={{ display: "flex", alignItems: "baseline", gap: "0.6rem", marginBottom: "0.6rem" }}>
-                    <span style={{ color: "#c5a46d", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em" }}>
+                    <span style={{ color: "#ee2e22", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.12em" }}>
                       {service.tag}
                     </span>
                     <h2
@@ -229,13 +229,13 @@ export default function WhyPanInfraPage() {
                       fontSize: "0.58rem",
                       letterSpacing: "0.2em",
                       textTransform: "uppercase",
-                      color: "#c5a46d",
+                      color: "#ee2e22",
                       textDecoration: "none",
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "0.35rem",
                       fontWeight: 500,
-                      borderBottom: "1px solid rgba(197,164,109,0.3)",
+                      borderBottom: "1px solid rgba(238, 46, 34,0.3)",
                       paddingBottom: "2px",
                       transition: "border-color 0.2s",
                     }}
@@ -251,9 +251,9 @@ export default function WhyPanInfraPage() {
       </section>
 
       {/* ── Final CTA ─────────────────────────────── */}
-      <section style={{ background: "#111111", padding: "6rem 2.5rem", borderTop: "1px solid rgba(197,164,109,0.12)" }}>
+      <section style={{ background: "#005c97", padding: "6rem 2.5rem", borderTop: "1px solid rgba(238, 46, 34,0.12)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>
             Ready to invest in Hyderabad real estate?
           </p>
           <h2
@@ -274,7 +274,7 @@ export default function WhyPanInfraPage() {
               alignItems: "center",
               gap: "0.5rem",
               padding: "1rem 2.5rem",
-              background: "#c5a46d",
+              background: "#ee2e22",
               color: "#ffffff",
               textDecoration: "none",
               fontSize: "0.65rem",

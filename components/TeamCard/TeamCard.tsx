@@ -39,7 +39,7 @@ export default function TeamCard({ member, index }: Props) {
           width: calc(100% + 8px);
           height: calc(100% + 8px);
           border-radius: 14px;
-          background: linear-gradient(-45deg, #c5a46d 0%, #3a3020 50%, #111111 100%);
+          background: linear-gradient(-45deg, #ee2e22 0%, #3a3020 50%, #005c97 100%);
           z-index: -10;
           pointer-events: none;
           transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -51,7 +51,7 @@ export default function TeamCard({ member, index }: Props) {
           z-index: -11;
           position: absolute;
           inset: 0;
-          background: linear-gradient(-45deg, #c5a46d 0%, #111111 100%);
+          background: linear-gradient(-45deg, #ee2e22 0%, #005c97 100%);
           transform: translate3d(0, 0, 0) scale(0.95);
           filter: blur(15px);
           opacity: 0;
@@ -73,7 +73,7 @@ export default function TeamCard({ member, index }: Props) {
         .team-card-inner {
           position: absolute;
           inset: 0;
-          background-color: #111111;
+          background-color: #005c97;
           border-radius: 12px;
           overflow: hidden;
           z-index: -1;
@@ -107,14 +107,14 @@ export default function TeamCard({ member, index }: Props) {
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: "0.75rem" }}>
                         <h3 style={{
                             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
-                            fontSize: "1.75rem", color: "#ffffff", lineHeight: 1.1,
-                            marginBottom: "0.5rem"
+                            fontSize: "1.85rem", color: "#ffffff", lineHeight: 1.1,
+                            marginBottom: "0.5rem", fontWeight: 800
                         }}>
                             {member.name}
                         </h3>
-                        <div style={{ width: "20px", height: "1px", background: "rgba(197,164,109,0.3)", marginBottom: "0.75rem" }} />
+                        <div style={{ width: "24px", height: "1px", background: "rgba(238, 46, 34, 0.4)", marginBottom: "0.75rem" }} />
                     </div>
-                    <p style={{ fontSize: "0.6rem", color: "#c5a46d", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 600 }}>
+                    <p style={{ fontSize: "0.65rem", color: "#ee2e22", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 800 }}>
                         {member.role}
                     </p>
                     <span style={{

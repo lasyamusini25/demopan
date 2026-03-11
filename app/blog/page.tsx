@@ -18,10 +18,10 @@ export default function BlogIndex() {
                         fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
                         fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
                         fontWeight: 700,
-                        color: "#111111",
+                        color: "#005c97",
                         lineHeight: 1.1,
                     }}>
-                        Pan Infra <span style={{ color: "#c5a46d" }}>Insights</span>
+                        Pan Infra <span style={{ color: "#ee2e22" }}>Insights</span>
                     </h1>
                     <p style={{ marginTop: "0.75rem", fontSize: "1rem", color: "#666666", maxWidth: "500px", lineHeight: 1.6 }}>
                         Expert perspectives, market trends, and investment strategies in the Hyderabad real estate ecosystem.
@@ -43,7 +43,7 @@ export default function BlogIndex() {
                             </div>
                             <div style={{ maxWidth: "800px" }}>
                                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1rem" }}>
-                                    <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#c5a46d" }}>
+                                    <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22" }}>
                                         {featuredPost.category}
                                     </span>
                                     <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "#ccc", display: "inline-block" }} />
@@ -53,7 +53,7 @@ export default function BlogIndex() {
                                     fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
                                     fontSize: "clamp(1.75rem, 4vw, 3rem)",
                                     fontWeight: 700,
-                                    color: "#111111",
+                                    color: "#005c97",
                                     lineHeight: 1.15,
                                     marginBottom: "1rem",
                                 }}>
@@ -71,7 +71,7 @@ export default function BlogIndex() {
                                         style={{ borderRadius: "50%", objectFit: "cover" }}
                                     />
                                     <div>
-                                        <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "#111111" }}>{featuredPost.author.name}</p>
+                                        <p style={{ fontSize: "0.875rem", fontWeight: 600, color: "#005c97" }}>{featuredPost.author.name}</p>
                                         <p style={{ fontSize: "0.75rem", color: "#888" }}>{featuredPost.date}</p>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ export default function BlogIndex() {
                                         fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
                                         fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)",
                                         fontWeight: 700,
-                                        color: "#111111",
+                                        color: "#005c97",
                                         lineHeight: 1.25,
                                         marginBottom: "0.75rem",
                                     }}>
@@ -114,7 +114,7 @@ export default function BlogIndex() {
                                     </p>
                                 </Link>
                                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                                    <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#c5a46d" }}>{post.category}</span>
+                                    <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22" }}>{post.category}</span>
                                     <span style={{ fontSize: "0.75rem", color: "#888" }}>{post.readTime}</span>
                                     <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "#ccc", display: "inline-block" }} />
                                     <span style={{ fontSize: "0.75rem", color: "#888" }}>{post.date}</span>

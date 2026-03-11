@@ -17,7 +17,7 @@ export default function Testimonials() {
   return (
     <section
       style={{
-        background: "#111111",
+        background: "#005c97",
         padding: "7rem 2.5rem",
         overflow: "hidden",
         position: "relative",
@@ -28,14 +28,14 @@ export default function Testimonials() {
       <div style={{
         position: "absolute", top: "3rem", left: "2.5rem",
         fontFamily: "var(--font-playfair,Georgia,serif)",
-        fontSize: "14rem", color: "rgba(197,164,109,0.08)",
+        fontSize: "14rem", color: "rgba(238, 46, 34,0.08)",
         lineHeight: 1, userSelect: "none", pointerEvents: "none",
       }}>
         &ldquo;
       </div>
 
       <div style={{ maxWidth: "860px", margin: "0 auto", position: "relative" }}>
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "3rem" }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "3rem" }}>
           Client Stories
         </p>
 
@@ -61,10 +61,10 @@ export default function Testimonials() {
               &ldquo;{item.quote}&rdquo;
             </p>
             <footer style={{ display: "flex", alignItems: "center", gap: "1.25rem" }}>
-              <div style={{ width: "2.5rem", height: "1px", background: "rgba(197,164,109,0.5)" }} />
+              <div style={{ width: "2.5rem", height: "1px", background: "rgba(238, 46, 34,0.5)" }} />
               <div>
                 <p style={{ fontSize: "0.85rem", color: "#ffffff", letterSpacing: "0.1em", fontWeight: 500, marginBottom: "0.25rem" }}>{item.name}</p>
-                <p style={{ fontSize: "0.6rem", color: "rgba(197,164,109,0.7)", letterSpacing: "0.2em", textTransform: "uppercase" }}>{item.role}</p>
+                <p style={{ fontSize: "0.6rem", color: "rgba(238, 46, 34,0.7)", letterSpacing: "0.2em", textTransform: "uppercase" }}>{item.role}</p>
               </div>
             </footer>
           </motion.blockquote>
@@ -80,7 +80,7 @@ export default function Testimonials() {
               style={{
                 width: i === index ? "2rem" : "0.5rem",
                 height: "2px",
-                background: i === index ? "#c5a46d" : "rgba(255,255,255,0.25)",
+                background: i === index ? "#ee2e22" : "rgba(255,255,255,0.25)",
                 border: "none",
                 padding: 0,
                 transition: "all 0.3s",

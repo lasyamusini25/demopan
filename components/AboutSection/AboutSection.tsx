@@ -40,11 +40,11 @@ export default function AboutSection() {
         {/* Year badge */}
         <div style={{
           position: "absolute", bottom: "-2rem", right: "2rem",
-          background: "#111111", padding: "2rem", textAlign: "center",
-          border: "1px solid rgba(197,164,109,0.3)"
+          background: "#005c97", padding: "2rem", textAlign: "center",
+          border: "1px solid rgba(255, 255, 255, 0.3)"
         }}>
-          <span style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#c5a46d", lineHeight: 1 }}>2010</span>
-          <p style={{ fontSize: "0.5rem", letterSpacing: "0.25em", color: "rgba(255,255,255,0.5)", textTransform: "uppercase", marginTop: "0.4rem" }}>Est. Since</p>
+          <span style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#ffffff", lineHeight: 1 }}>2010</span>
+          <p style={{ fontSize: "0.5rem", letterSpacing: "0.25em", color: "rgba(255,255,255,0.7)", textTransform: "uppercase", marginTop: "0.4rem" }}>Est. Since</p>
         </div>
       </motion.div>
 
@@ -55,8 +55,8 @@ export default function AboutSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.2 }}
       >
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.5rem" }}>About Us</p>
-        <h2 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(2.5rem,5vw,4rem)", lineHeight: 0.95, color: "#111111", marginBottom: "2.5rem" }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>About Us</p>
+        <h2 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(2.5rem,5.5vw,4.5rem)", lineHeight: 0.95, color: "#005c97", marginBottom: "2.5rem", fontWeight: 800 }}>
           Building Dreams <br /> Across Hyderabad
         </h2>
         <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "#555555", marginBottom: "1.5rem" }}>
@@ -70,8 +70,8 @@ export default function AboutSection() {
         <div style={{ display: "flex", gap: "3.5rem", marginBottom: "3rem" }}>
           {[{ n: "1,000+", l: "Families" }, { n: "800+", l: "Acres" }, { n: "15+", l: "Projects" }].map(s => (
             <div key={s.l}>
-              <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.25rem", color: "#111111", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
-              <div style={{ fontSize: "0.55rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#c5a46d", marginTop: "0.4rem" }}>{s.l}</div>
+              <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.25rem", color: "#005c97", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
+              <div style={{ fontSize: "0.55rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "#ee2e22", marginTop: "0.4rem" }}>{s.l}</div>
             </div>
           ))}
         </div>
@@ -80,12 +80,13 @@ export default function AboutSection() {
           href="/about"
           style={{
             display: "inline-flex", alignItems: "center", gap: "0.75rem",
-            fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
-            textDecoration: "none", color: "#111111", borderBottom: "1px solid #111111",
-            paddingBottom: "3px", transition: "color 0.25s, border-color 0.25s"
+            fontSize: "0.75rem", letterSpacing: "0.25em", textTransform: "uppercase",
+            textDecoration: "none", color: "#005c97", borderBottom: "2px solid #005c97",
+            paddingBottom: "4px", transition: "color 0.25s, border-color 0.25s",
+            fontWeight: 800,
           }}
-          onMouseEnter={e => { e.currentTarget.style.color = "#c5a46d"; e.currentTarget.style.borderColor = "#c5a46d"; }}
-          onMouseLeave={e => { e.currentTarget.style.color = "#111111"; e.currentTarget.style.borderColor = "#111111"; }}
+          onMouseEnter={e => { e.currentTarget.style.color = "#ee2e22"; e.currentTarget.style.borderColor = "#ee2e22"; }}
+          onMouseLeave={e => { e.currentTarget.style.color = "#005c97"; e.currentTarget.style.borderColor = "#005c97"; }}
         >
           Discover Our Story →
         </Link>

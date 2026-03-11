@@ -56,8 +56,8 @@ export default async function ProjectDetailPage({ params }: Params) {
           maxWidth: "1280px",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.25rem" }}>
-            <div style={{ width: "24px", height: "1px", background: "#c5a46d" }} />
-            <p style={{ fontSize: "0.55rem", letterSpacing: "0.38em", color: "#c5a46d", textTransform: "uppercase" }}>
+            <div style={{ width: "24px", height: "1px", background: "#ee2e22" }} />
+            <p style={{ fontSize: "0.55rem", letterSpacing: "0.38em", color: "#ee2e22", textTransform: "uppercase" }}>
               {project.category}
             </p>
           </div>
@@ -94,11 +94,11 @@ export default async function ProjectDetailPage({ params }: Params) {
         gap: "4rem",
       }} className="md:grid-cols-[2fr_1fr]">
         <div>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#c5a46d", textTransform: "uppercase", marginBottom: "1.25rem" }}>Overview</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.25rem" }}>Overview</p>
           <h2 style={{
             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
             fontSize: "clamp(1.75rem,3.5vw,2.75rem)",
-            color: "#111111", marginBottom: "2rem", lineHeight: 1.1,
+            color: "#005c97", marginBottom: "2rem", lineHeight: 1.1,
           }}>
             {project.title}
           </h2>
@@ -113,7 +113,7 @@ export default async function ProjectDetailPage({ params }: Params) {
           display: "flex", flexDirection: "column", gap: "1.75rem",
           alignSelf: "start",
         }}>
-          <p style={{ fontSize: "0.55rem", letterSpacing: "0.35em", color: "#c5a46d", textTransform: "uppercase", paddingBottom: "1rem", borderBottom: "1px solid rgba(0,0,0,0.07)" }}>
+          <p style={{ fontSize: "0.55rem", letterSpacing: "0.35em", color: "#ee2e22", textTransform: "uppercase", paddingBottom: "1rem", borderBottom: "1px solid rgba(0,0,0,0.07)" }}>
             Project Details
           </p>
           {[
@@ -133,8 +133,8 @@ export default async function ProjectDetailPage({ params }: Params) {
       {/* Gallery */}
       <section style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 2.5rem 2rem" }} aria-label="Project gallery">
         <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2.5rem" }}>
-          <div style={{ width: "24px", height: "1px", background: "#c5a46d" }} />
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#c5a46d", textTransform: "uppercase" }}>Gallery</p>
+          <div style={{ width: "24px", height: "1px", background: "#ee2e22" }} />
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", textTransform: "uppercase" }}>Gallery</p>
         </div>
 
         <SwipeCarousel images={project.gallery} />
@@ -164,7 +164,7 @@ export default async function ProjectDetailPage({ params }: Params) {
             style={{
               fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
               textDecoration: "none", padding: "0.9rem 2rem",
-              background: "#111111", color: "#ffffff",
+              background: "#005c97", color: "#ffffff",
               display: "inline-block",
             }}
           >

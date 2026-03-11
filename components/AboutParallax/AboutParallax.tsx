@@ -150,7 +150,7 @@ const OverlayCopy = ({ subheading, heading }: { subheading: string; heading: str
         fontSize: "0.55rem",
         letterSpacing: "0.4em",
         textTransform: "uppercase",
-        color: "#c5a46d",
+        color: "#ee2e22",
         marginBottom: "1.1rem",
         textAlign: "center",
       }}>
@@ -194,7 +194,7 @@ const SectionContent = ({
     <p style={{
       fontSize: "0.6rem",
       letterSpacing: "0.45em",
-      color: "#c5a46d",
+      color: "#ee2e22",
       textTransform: "uppercase",
       marginBottom: "2.5rem",
     }}>
@@ -205,7 +205,7 @@ const SectionContent = ({
     <h3 style={{
       fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
       fontSize: "clamp(2rem, 5vw, 4rem)",
-      color: "#111111",
+      color: "#005c97",
       lineHeight: 1.1,
       fontWeight: 700,
       marginBottom: "4.5rem",
@@ -243,7 +243,7 @@ const SectionContent = ({
           <div style={{
             fontFamily: "var(--font-playfair,Georgia,serif)",
             fontSize: "2.5rem",
-            color: "#111111",
+            color: "#005c97",
             fontWeight: 600,
             lineHeight: 1,
           }}>{s.n}</div>
@@ -251,7 +251,7 @@ const SectionContent = ({
             fontSize: "0.55rem",
             letterSpacing: "0.2em",
             textTransform: "uppercase",
-            color: "#c5a46d",
+            color: "#ee2e22",
             marginTop: "0.75rem",
           }}>{s.l}</div>
         </div>
@@ -272,12 +272,12 @@ const SectionContent = ({
           letterSpacing: "0.3em",
           textTransform: "uppercase",
           textDecoration: "none",
-          padding: "1.5rem 3rem",
-          background: "#111111",
-          color: "#c5a46d",
-          fontWeight: 600,
+          padding: "1.5rem 3.5rem",
+          background: "#005c97",
+          color: "#ffffff",
+          fontWeight: 800,
           transition: "all 0.4s ease",
-          border: "1px solid #111111",
+          border: "2px solid #005c97",
         }}
       >
         Book a Site Visit →
