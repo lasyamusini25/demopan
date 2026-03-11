@@ -122,7 +122,7 @@ export default function Footer() {
             <div style={{ border: "1px solid rgba(0,0,0,0.08)", overflow: "hidden", borderRadius: "0.5rem" }}>
               <iframe
                 title="Pan Infra office location"
-                src="https://www.google.com/maps?q=Dallas+Centre,+Knowledge+City+Rd,+Rai+Durg,+Hyderabad,+Telangana+500032&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15226.21087780551!2d78.37563!3d17.43324!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91232008a82f%3A0x1e38fc6bdd694d76!2sPANINFRA%20SPACE%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1773235707986!5m2!1sen!2sin"
                 style={{ width: "100%", height: "180px", display: "block", border: "none" }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

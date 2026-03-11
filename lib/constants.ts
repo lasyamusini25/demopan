@@ -24,7 +24,7 @@ export const SITE = {
   email: "info@paninfra.com",
   phone: "+91 8999 666 888",
   whatsapp: "https://api.whatsapp.com/send/?phone=918999666888&text=Hi%2C%0D%0AHow+can+we+help+you+today%21&type=phone_number&app_absent=0",
-  address: "7th floor Dallas Centre, 83/1, Knowledge City Rd, Rai Durg, Hyderabad, Telangana 500032",
+  address: "A1, 7th floor Dallas Centre, 83/1, Knowledge City Rd, Rai Durg, Hyderabad, Telangana 500032",
   social: {
     instagram: "https://www.instagram.com/paninfra/",
     facebook: "https://www.facebook.com/PanInfra/",

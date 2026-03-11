@@ -144,8 +144,226 @@ export default function WhyPanInfraPage() {
         </div>
       </section>
 
+      {/* ── Why Choose Pan Infra Section ───────────── */}
+      <section style={{ maxWidth: "1280px", margin: "0 auto", padding: "6rem 2.5rem" }}>
+        <div style={{ textAlign: "center", marginBottom: "5rem" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", justifyContent: "center" }}>
+            <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase" }}>
+              Why Pan Infra
+            </p>
+            <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
+          </div>
+          <h2
+            style={{
+              fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+              fontSize: "clamp(2rem,5vw,4rem)",
+              lineHeight: 1.1,
+              color: "#ffffff",
+              marginBottom: "1.5rem",
+              fontWeight: 700,
+            }}
+          >
+            Trusted Real Estate Partner<br />Since Inception
+          </h2>
+          <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.5)", maxWidth: "700px", margin: "0 auto", lineHeight: 1.8 }}>
+            Pan Infra has emerged as Hyderabad's most trusted name in premium plots, villas, and gated communities.
+            Our commitment to transparency, legal compliance, and customer satisfaction sets us apart.
+          </p>
+        </div>
+
+        {/* Key Benefits Grid */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2.5rem", marginBottom: "4rem" }}>
+          {[
+            {
+              title: "100% Legal Compliance",
+              desc: "Every Pan Infra project is fully HMDA or DTCP approved. Clear title deeds, zero legal encumbrances, and complete documentation transparency from day one.",
+              icon: "✓"
+            },
+            {
+              title: "Prime Locations Only",
+              desc: "We handpick locations in Hyderabad's fastest-appreciating corridors — Shadnagar, Kokapet, Mokila, Tukkuguda — backed by deep infrastructure research and government masterplan analysis.",
+              icon: "📍"
+            },
+            {
+              title: "World-Class Infrastructure",
+              desc: "Wide BT roads (40-60ft), underground electrical lines, water supply pipelines, street lighting, and landscaped parks — all built before handover.",
+              icon: "🏗️"
+            },
+            {
+              title: "Transparent Pricing",
+              desc: "No hidden costs. No last-minute surprises. What you see is what you pay — plot price, registration, and statutory charges clearly itemized upfront.",
+              icon: "💰"
+            },
+            {
+              title: "Post-Sale Support",
+              desc: "Dedicated relationship manager for mutation, EC support, resale assistance, and property appreciation advisory. We stay with you long after the sale.",
+              icon: "🤝"
+            },
+            {
+              title: "NRI-Friendly Process",
+              desc: "Virtual site tours, POA assistance, FEMA-compliant transactions, and dedicated support for overseas buyers. Invest from anywhere in the world.",
+              icon: "🌏"
+            },
+          ].map((benefit, i) => (
+            <div
+              key={i}
+              style={{
+                background: "#1a1a1a",
+                border: "1px solid rgba(238, 46, 34,0.15)",
+                padding: "2.5rem 2rem",
+                position: "relative",
+              }}
+            >
+              <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>{benefit.icon}</div>
+              <h3
+                style={{
+                  fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+                  fontSize: "1.35rem",
+                  color: "#ffffff",
+                  marginBottom: "1rem",
+                  fontWeight: 600,
+                }}
+              >
+                {benefit.title}
+              </h3>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.75, color: "rgba(255,255,255,0.5)", margin: 0 }}>
+                {benefit.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Numbers & Credibility ─────────────────── */}
+      <section style={{ background: "#1a1a1a", padding: "5rem 2.5rem", borderTop: "1px solid rgba(238, 46, 34,0.15)", borderBottom: "1px solid rgba(238, 46, 34,0.15)" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "4rem", textAlign: "center" }}>
+            {[
+              { num: "2500+", label: "Happy Families" },
+              { num: "50+", label: "Projects Delivered" },
+              { num: "3000", label: "Acres Developed" },
+              { num: "100%", label: "HMDA/DTCP Approved" },
+            ].map((stat, i) => (
+              <div key={i}>
+                <h3
+                  style={{
+                    fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+                    fontSize: "clamp(2.5rem,5vw,4rem)",
+                    color: "#ee2e22",
+                    marginBottom: "0.5rem",
+                    fontWeight: 700,
+                  }}
+                >
+                  {stat.num}
+                </h3>
+                <p style={{ fontSize: "0.85rem", letterSpacing: "0.15em", color: "rgba(255,255,255,0.5)", textTransform: "uppercase" }}>
+                  {stat.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── The Pan Infra Journey ───────────────────── */}
+      <section style={{ maxWidth: "1280px", margin: "0 auto", padding: "6rem 2.5rem" }}>
+        <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+              fontSize: "clamp(2rem,4vw,3.5rem)",
+              color: "#ffffff",
+              marginBottom: "1rem",
+              fontWeight: 700,
+            }}
+          >
+            Your Journey with Pan Infra
+          </h2>
+          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
+            From the first site visit to the day you hold your plot documents — a seamless, transparent, and customer-first experience.
+          </p>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "3rem" }}>
+          {[
+            {
+              step: "01",
+              title: "Discovery & Consultation",
+              desc: "Share your requirements, budget, and investment goals. Our expert advisors help you shortlist the perfect properties.",
+            },
+            {
+              step: "02",
+              title: "Site Visit & Selection",
+              desc: "Guided site tours with our team. Explore the location, infrastructure, amenities, and neighbourhood — at your pace.",
+            },
+            {
+              step: "03",
+              title: "Documentation Review",
+              desc: "Complete transparency: HMDA/DTCP approvals, EC, title deed, layout plan, and NOCs — all verified and shared before booking.",
+            },
+            {
+              step: "04",
+              title: "Booking & Payment",
+              desc: "Transparent pricing with itemized costs. Flexible payment plans. Legal assistance for registration and mutation.",
+            },
+            {
+              step: "05",
+              title: "Handover & Beyond",
+              desc: "Plot handover with complete documentation. Post-sale support for EC updates, mutation, resale, and property advisory.",
+            },
+          ].map((phase, i) => (
+            <div key={i} style={{ position: "relative" }}>
+              <div
+                style={{
+                  fontSize: "4rem",
+                  fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+                  color: "rgba(238, 46, 34,0.15)",
+                  fontWeight: 700,
+                  lineHeight: 1,
+                  marginBottom: "1rem",
+                }}
+              >
+                {phase.step}
+              </div>
+              <h3
+                style={{
+                  fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+                  fontSize: "1.3rem",
+                  color: "#ffffff",
+                  marginBottom: "0.75rem",
+                  fontWeight: 600,
+                }}
+              >
+                {phase.title}
+              </h3>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.75, color: "rgba(255,255,255,0.5)", margin: 0 }}>
+                {phase.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* ── 3D Service Cards Grid ─────────────────── */}
-      <section style={{ maxWidth: "1440px", margin: "0 auto", padding: "5rem 2rem" }}>
+      <section style={{ maxWidth: "1440px", margin: "0 auto", padding: "5rem 2rem", background: "#0a0a0a" }}>
+        <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+          <h2
+            style={{
+              fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+              fontSize: "clamp(2rem,4vw,3.5rem)",
+              color: "#ffffff",
+              marginBottom: "1rem",
+              fontWeight: 700,
+            }}
+          >
+            Our Premium Offerings
+          </h2>
+          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
+            Eight specialized real estate solutions designed for every investment need and lifestyle aspiration.
+          </p>
+        </div>
+
         <div
           style={{
             display: "grid",
