@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Hero from "@/components/Hero/Hero";
-import ProjectGrid from "@/components/ProjectGrid/ProjectGrid";
+import ProjectCarousel from "@/components/ProjectCarousel/ProjectCarousel";
 import AboutSection from "@/components/AboutSection/AboutSection";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
-import Testimonials from "@/components/Testimonials/Testimonials";
+import GoogleReviews from "@/components/GoogleReviews/GoogleReviews";
 import CTASection from "@/components/CTASection/CTASection";
 import MarqueeStrip from "@/components/MarqueeStrip/MarqueeStrip";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
@@ -30,11 +30,11 @@ export default function Home() {
     <>
       <Hero />
       <MarqueeStrip />
-      <ProjectGrid projects={PROJECTS.slice(0, 4)} />
+      <ProjectCarousel projects={PROJECTS.slice(0, 6)} />
       <AboutSection />
       <MarqueeStrip />
       <ServicesSection />
-      <Testimonials />
+      <GoogleReviews />
       <InstaFeed />
       <CTASection />
     </>

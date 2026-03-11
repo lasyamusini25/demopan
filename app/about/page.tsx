@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata, breadcrumbJsonLd } from "@/lib/seo";
-import { TEAM, TIMELINE } from "@/lib/constants";
+import { TIMELINE } from "@/lib/constants";
 import { AboutParallax } from "@/components/AboutParallax/AboutParallax";
-import TeamCard from "@/components/TeamCard/TeamCard";
 
 
 export const metadata: Metadata = buildMetadata({
@@ -120,26 +119,7 @@ export default function AboutPage() {
       {/* Parallax Content Flow */}
       <AboutParallax />
 
-      {/* Team */}
-      <section style={{ background: "#f8f6f2", padding: "7rem 2.5rem" }} aria-label="Team">
-        <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
-          <div style={{ marginBottom: "5rem" }}>
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>The Leadership</p>
-            <h2 style={{
-              fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
-              fontSize: "clamp(2.2rem,5vw,4.5rem)",
-              lineHeight: 1, color: "#005c97",
-            }}>
-              Driven by Experience
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {TEAM.map((member, i) => (
-              <TeamCard key={member.name} member={member} index={i} />
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Timeline */}
       <section style={{ maxWidth: "900px", margin: "0 auto", padding: "10rem 2.5rem" }} aria-label="Timeline">
