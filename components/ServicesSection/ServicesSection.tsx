@@ -9,11 +9,11 @@ import { ReactNode } from "react";
 const icons = ["◈", "⬡", "◎", "◉", "⬢"];
 
 const gradients = [
-  "linear-gradient(135deg, #ee2e22 0%, #a8893d 100%)",
-  "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
-  "linear-gradient(135deg, #ee2e22 0%, #d4b97a 100%)",
-  "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
-  "linear-gradient(135deg, #ee2e22 0%, #a8893d 100%)",
+  "linear-gradient(135deg, #005c97 0%, #3366cc 100%)",
+  "linear-gradient(135deg, #004b7d 0%, #002d4d 100%)",
+  "linear-gradient(135deg, #005c97 0%, #4da6ff 100%)",
+  "linear-gradient(135deg, #004b7d 0%, #002d4d 100%)",
+  "linear-gradient(135deg, #005c97 0%, #3366cc 100%)",
 ];
 
 const cardSpans = [
@@ -29,7 +29,7 @@ function BounceCard({ className, children }: { className: string; children: Reac
     <CardContainer containerClassName={className} className="w-full h-full min-h-[260px]">
       <CardBody
         className="group relative h-full w-full cursor-pointer rounded-2xl p-8 flex flex-col items-center justify-center text-center"
-        style={{ background: "#1a1714", border: "1px solid rgba(238, 46, 34,0.15)" }}
+        style={{ background: "#ffffff", border: "1px solid rgba(0, 92, 151,0.15)" }}
       >
         {children}
       </CardBody>
@@ -43,9 +43,9 @@ function CardTitle({ children, index }: { children: ReactNode; index: number }) 
       <div style={{
         width: "60px", height: "60px", flexShrink: 0,
         display: "flex", alignItems: "center", justifyContent: "center",
-        border: "1px solid rgba(238, 46, 34,0.3)",
-        background: "rgba(238, 46, 34,0.08)",
-        color: "#ee2e22", fontSize: "1.75rem", borderRadius: "1rem",
+        border: "1px solid rgba(0, 92, 151,0.3)",
+        background: "rgba(0, 92, 151,0.08)",
+        color: "#005c97", fontSize: "1.75rem", borderRadius: "1rem",
         transition: "transform 0.4s ease",
       }} className="group-hover:scale-110">
         {icons[index]}
@@ -53,7 +53,7 @@ function CardTitle({ children, index }: { children: ReactNode; index: number }) 
       <h3 style={{
         fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
         fontSize: "clamp(1.75rem,3.5vw,2.5rem)",
-        color: "#ffffff", lineHeight: 1.1,
+        color: "#005c97", lineHeight: 1.1,
         transition: "opacity 0.3s ease",
       }} className="group-hover:opacity-10">
         {children}
@@ -76,7 +76,7 @@ export default function ServicesSection() {
             style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}
             initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           >
-            Our Properties
+            Why Choose Us
           </motion.p>
           <motion.h2
             style={{
@@ -86,29 +86,53 @@ export default function ServicesSection() {
             }}
             initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
           >
-            Plots, Villas &amp; Gated Communities
+            Building Trust, Securing Futures.
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
           >
-            <p style={{ fontSize: "1.05rem", lineHeight: 1.85, color: "#666666", marginBottom: "2.5rem" }}>
-              From HMDA-approved residential plots to luxury villa communities — we offer transparent transactions, clear title deeds, and world-class amenities.
+            <p style={{ fontSize: "1.1rem", lineHeight: 1.85, color: "#444444", marginBottom: "1.5rem", fontWeight: 500 }}>
+              With over a decade of excellence in Hyderabad&apos;s real estate landscape, Pan Infra has consistently delivered premium residential plots and luxury managed communities that offer both unparalleled living experiences and exceptional investment returns.
             </p>
-            <Link
-              href="/why-paninfra"
-              style={{
-                fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase",
-                textDecoration: "none", color: "#005c97",
-                borderBottom: "1px solid #005c97", paddingBottom: "3px",
-                transition: "all 0.3s ease",
-                display: "inline-block",
-                fontWeight: 600,
-              }}
-              onMouseEnter={e => { e.currentTarget.style.color = "#ee2e22"; e.currentTarget.style.borderBottomColor = "#ee2e22"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "#005c97"; e.currentTarget.style.borderBottomColor = "#005c97"; }}
-            >
-              Why Pan Infra →
-            </Link>
+            <p style={{ fontSize: "1.05rem", lineHeight: 1.85, color: "#666666", marginBottom: "3.5rem" }}>
+              From HMDA-approved residential plots to luxury villa communities — we guarantee 100% transparent transactions, clear title deeds, strategic growth corridor locations, and world-class sustainable amenities designed to elevate your lifestyle. Here&apos;s why 1000+ happy families chose us as their trusted growth partner.
+            </p>
+            <div style={{ display: "flex", gap: "2rem", alignItems: "center", justifyContent: "center", flexWrap: "wrap" }}>
+              <Link
+                href="/contact"
+                style={{
+                  background: "#ee2e22",
+                  color: "#ffffff",
+                  padding: "0.85rem 2.25rem",
+                  fontSize: "0.85rem",
+                  letterSpacing: "0.15em",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  fontWeight: 600,
+                  borderRadius: "4px",
+                  transition: "all 0.3s ease",
+                  boxShadow: "0 4px 15px rgba(238, 46, 34, 0.2)",
+                }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 20px rgba(238, 46, 34, 0.3)"; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "0 4px 15px rgba(238, 46, 34, 0.2)"; }}
+              >
+                Request a Callback
+              </Link>
+              <Link
+                href="/why-paninfra"
+                style={{
+                  fontSize: "0.75rem", letterSpacing: "0.25em", textTransform: "uppercase",
+                  textDecoration: "none", color: "#005c97",
+                  borderBottom: "1px solid rgba(0, 92, 151,0.3)", paddingBottom: "5px",
+                  transition: "all 0.3s ease",
+                  fontWeight: 600,
+                }}
+                onMouseEnter={e => { e.currentTarget.style.color = "#ee2e22"; e.currentTarget.style.borderBottomColor = "#ee2e22"; }}
+                onMouseLeave={e => { e.currentTarget.style.color = "#005c97"; e.currentTarget.style.borderBottomColor = "rgba(0, 92, 151,0.3)"; }}
+              >
+                Learn More →
+              </Link>
+            </div>
           </motion.div>
         </div>
 
@@ -118,7 +142,7 @@ export default function ServicesSection() {
             <BounceCard key={service.title} className={cardSpans[idx]}>
               <CardItem translateZ={30} as="span" style={{
                 fontFamily: "var(--font-playfair,Georgia,serif)",
-                fontSize: "0.85rem", color: "rgba(238, 46, 34,0.3)",
+                fontSize: "0.85rem", color: "rgba(0, 92, 151,0.3)",
                 letterSpacing: "0.08em", position: "absolute", top: "2rem", right: "2rem",
               }}>
                 {String(idx + 1).padStart(2, "0")}
@@ -161,7 +185,7 @@ export default function ServicesSection() {
             <BounceCard key={service.title} className={cardSpans[idx + 2]}>
               <CardItem translateZ={30} as="span" style={{
                 fontFamily: "var(--font-playfair,Georgia,serif)",
-                fontSize: "0.85rem", color: "rgba(238, 46, 34,0.3)",
+                fontSize: "0.85rem", color: "rgba(0, 92, 151,0.3)",
                 letterSpacing: "0.08em", position: "absolute", top: "2rem", right: "2rem",
               }}>
                 {String(idx + 3).padStart(2, "0")}
@@ -205,7 +229,7 @@ export default function ServicesSection() {
               <BounceCard key={service.title} className={cardSpans[4]}>
                 <CardItem translateZ={30} as="span" style={{
                   fontFamily: "var(--font-playfair,Georgia,serif)",
-                  fontSize: "0.85rem", color: "rgba(238, 46, 34,0.3)",
+                  fontSize: "0.85rem", color: "rgba(0, 92, 151,0.3)",
                   letterSpacing: "0.08em", position: "absolute", top: "2rem", right: "2rem",
                 }}>
                   {String(idx + 5).padStart(2, "0")}

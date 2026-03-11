@@ -87,7 +87,7 @@ export default function WhyPanInfraPage() {
   ]);
 
   return (
-    <div style={{ background: "#0f0f0f", minHeight: "100vh" }}>
+    <div style={{ background: "#f8f9fa", minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -138,7 +138,7 @@ export default function WhyPanInfraPage() {
           >
             Plots, Villas &amp;<br />Gated Communities
           </h1>
-          <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.5)", maxWidth: "520px", lineHeight: 1.8 }}>
+          <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.7)", maxWidth: "520px", lineHeight: 1.8 }}>
             Eight specialised real estate offerings — from investment plots to luxury villas — all HMDA &amp; DTCP approved.
           </p>
         </div>
@@ -159,15 +159,15 @@ export default function WhyPanInfraPage() {
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2rem,5vw,4rem)",
               lineHeight: 1.1,
-              color: "#ffffff",
+              color: "#005c97",
               marginBottom: "1.5rem",
               fontWeight: 700,
             }}
           >
             Trusted Real Estate Partner<br />Since Inception
           </h2>
-          <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.5)", maxWidth: "700px", margin: "0 auto", lineHeight: 1.8 }}>
-            Pan Infra has emerged as Hyderabad's most trusted name in premium plots, villas, and gated communities.
+          <p style={{ fontSize: "1.05rem", color: "#666666", maxWidth: "700px", margin: "0 auto", lineHeight: 1.8 }}>
+            Pan Infra has emerged as Hyderabad&apos;s most trusted name in premium plots, villas, and gated communities.
             Our commitment to transparency, legal compliance, and customer satisfaction sets us apart.
           </p>
         </div>
@@ -209,25 +209,27 @@ export default function WhyPanInfraPage() {
             <div
               key={i}
               style={{
-                background: "#1a1a1a",
-                border: "1px solid rgba(238, 46, 34,0.15)",
+                background: "#ffffff",
+                border: "1px solid rgba(0, 92, 151,0.15)",
                 padding: "2.5rem 2rem",
                 position: "relative",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.03)",
+                borderRadius: "8px"
               }}
             >
-              <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem" }}>{benefit.icon}</div>
+              <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem", color: "#ee2e22" }}>{benefit.icon}</div>
               <h3
                 style={{
                   fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                   fontSize: "1.35rem",
-                  color: "#ffffff",
+                  color: "#005c97",
                   marginBottom: "1rem",
                   fontWeight: 600,
                 }}
               >
                 {benefit.title}
               </h3>
-              <p style={{ fontSize: "0.9rem", lineHeight: 1.75, color: "rgba(255,255,255,0.5)", margin: 0 }}>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.75, color: "#555555", margin: 0 }}>
                 {benefit.desc}
               </p>
             </div>
@@ -236,7 +238,7 @@ export default function WhyPanInfraPage() {
       </section>
 
       {/* ── Numbers & Credibility ─────────────────── */}
-      <section style={{ background: "#1a1a1a", padding: "5rem 2.5rem", borderTop: "1px solid rgba(238, 46, 34,0.15)", borderBottom: "1px solid rgba(238, 46, 34,0.15)" }}>
+      <section style={{ background: "#ffffff", padding: "5rem 2.5rem", borderTop: "1px solid rgba(0, 92, 151,0.1)", borderBottom: "1px solid rgba(0, 92, 151,0.1)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "4rem", textAlign: "center" }}>
             {[
@@ -257,7 +259,7 @@ export default function WhyPanInfraPage() {
                 >
                   {stat.num}
                 </h3>
-                <p style={{ fontSize: "0.85rem", letterSpacing: "0.15em", color: "rgba(255,255,255,0.5)", textTransform: "uppercase" }}>
+                <p style={{ fontSize: "0.85rem", letterSpacing: "0.15em", color: "#005c97", textTransform: "uppercase", fontWeight: 600 }}>
                   {stat.label}
                 </p>
               </div>
@@ -273,14 +275,14 @@ export default function WhyPanInfraPage() {
             style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2rem,4vw,3.5rem)",
-              color: "#ffffff",
+              color: "#005c97",
               marginBottom: "1rem",
               fontWeight: 700,
             }}
           >
             Your Journey with Pan Infra
           </h2>
-          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
+          <p style={{ fontSize: "1rem", color: "#666666", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
             From the first site visit to the day you hold your plot documents — a seamless, transparent, and customer-first experience.
           </p>
         </div>
@@ -318,7 +320,7 @@ export default function WhyPanInfraPage() {
                 style={{
                   fontSize: "4rem",
                   fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
-                  color: "rgba(238, 46, 34,0.15)",
+                  color: "rgba(238, 46, 34,0.9)",
                   fontWeight: 700,
                   lineHeight: 1,
                   marginBottom: "1rem",
@@ -330,14 +332,14 @@ export default function WhyPanInfraPage() {
                 style={{
                   fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                   fontSize: "1.3rem",
-                  color: "#ffffff",
+                  color: "#005c97",
                   marginBottom: "0.75rem",
                   fontWeight: 600,
                 }}
               >
                 {phase.title}
               </h3>
-              <p style={{ fontSize: "0.9rem", lineHeight: 1.75, color: "rgba(255,255,255,0.5)", margin: 0 }}>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.75, color: "#555555", margin: 0 }}>
                 {phase.desc}
               </p>
             </div>
@@ -346,20 +348,20 @@ export default function WhyPanInfraPage() {
       </section>
 
       {/* ── 3D Service Cards Grid ─────────────────── */}
-      <section style={{ maxWidth: "1440px", margin: "0 auto", padding: "5rem 2rem", background: "#0a0a0a" }}>
+      <section style={{ maxWidth: "1440px", margin: "0 auto", padding: "5rem 2rem", background: "#f1f5f9", borderRadius: "24px", marginBottom: "4rem" }}>
         <div style={{ textAlign: "center", marginBottom: "4rem" }}>
           <h2
             style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2rem,4vw,3.5rem)",
-              color: "#ffffff",
+              color: "#005c97",
               marginBottom: "1rem",
               fontWeight: 700,
             }}
           >
             Our Premium Offerings
           </h2>
-          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
+          <p style={{ fontSize: "1rem", color: "#666666", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
             Eight specialized real estate solutions designed for every investment need and lifestyle aspiration.
           </p>
         </div>
@@ -376,10 +378,13 @@ export default function WhyPanInfraPage() {
               <CardBody
                 className="relative"
                 style={{
-                  background: "#1a1a1a",
-                  border: "1px solid rgba(238, 46, 34,0.15)",
+                  background: "#ffffff",
+                  border: "1px solid rgba(0, 92, 151,0.1)",
                   width: "320px",
                   height: "auto",
+                  boxShadow: "0 10px 40px rgba(0,0,0,0.04)",
+                  borderRadius: "16px",
+                  overflow: "hidden"
                 }}
               >
                 {/* Image */}
@@ -392,8 +397,7 @@ export default function WhyPanInfraPage() {
                       style={{ objectFit: "cover" }}
                       sizes="320px"
                     />
-                    {/* Dark overlay */}
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, transparent 40%, rgba(26,26,26,0.6) 100%)" }} />
+                    {/* Dark overlay for contrast against light text below it in the original design if any */}
                   </div>
                 </CardItem>
 
@@ -411,7 +415,7 @@ export default function WhyPanInfraPage() {
                       style={{
                         fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                         fontSize: "1.25rem",
-                        color: "#ffffff",
+                        color: "#005c97",
                         fontWeight: 600,
                         lineHeight: 1.2,
                       }}
@@ -426,9 +430,9 @@ export default function WhyPanInfraPage() {
                   as="p"
                   translateZ={40}
                   style={{
-                    fontSize: "0.82rem",
+                    fontSize: "0.85rem",
                     lineHeight: 1.75,
-                    color: "rgba(255,255,255,0.45)",
+                    color: "#555555",
                     padding: "0 1.5rem",
                     margin: 0,
                   }}
@@ -444,7 +448,7 @@ export default function WhyPanInfraPage() {
                   <Link
                     href="/contact"
                     style={{
-                      fontSize: "0.58rem",
+                      fontSize: "0.6rem",
                       letterSpacing: "0.2em",
                       textTransform: "uppercase",
                       color: "#ee2e22",
@@ -452,12 +456,13 @@ export default function WhyPanInfraPage() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "0.35rem",
-                      fontWeight: 500,
+                      fontWeight: 600,
                       borderBottom: "1px solid rgba(238, 46, 34,0.3)",
                       paddingBottom: "2px",
                       transition: "border-color 0.2s",
                     }}
-                    className="footer-contact-link"
+                    onMouseEnter={e => { e.currentTarget.style.borderBottomColor = "#ee2e22"; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderBottomColor = "rgba(238, 46, 34,0.3)"; }}
                   >
                     Enquire Now <FiArrowUpRight />
                   </Link>
