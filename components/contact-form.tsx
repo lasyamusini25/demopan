@@ -17,7 +17,7 @@ const labelStyle = {
   display: "block",
   fontSize: "0.65rem",
   letterSpacing: "0.15em",
-  textTransform: "uppercase" as const,
+  
   color: "#777777",
   marginBottom: "0.5rem",
 };
@@ -105,7 +105,7 @@ export default function ContactForm() {
           border: "none",
           fontSize: "0.75rem",
           letterSpacing: "0.22em",
-          textTransform: "uppercase",
+          
           cursor: status === "done" ? "default" : "pointer",
           transition: "background 0.25s",
           fontFamily: "inherit",

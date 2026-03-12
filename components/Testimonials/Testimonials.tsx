@@ -35,7 +35,7 @@ export default function Testimonials() {
       </div>
 
       <div style={{ maxWidth: "860px", margin: "0 auto", position: "relative" }}>
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "3rem" }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22",  marginBottom: "3rem" }}>
           Client Stories
         </p>
 
@@ -64,7 +64,7 @@ export default function Testimonials() {
               <div style={{ width: "2.5rem", height: "1px", background: "rgba(238, 46, 34,0.5)" }} />
               <div>
                 <p style={{ fontSize: "0.85rem", color: "#ffffff", letterSpacing: "0.1em", fontWeight: 500, marginBottom: "0.25rem" }}>{item.name}</p>
-                <p style={{ fontSize: "0.6rem", color: "rgba(238, 46, 34,0.7)", letterSpacing: "0.2em", textTransform: "uppercase" }}>{item.role}</p>
+                <p style={{ fontSize: "0.6rem", color: "rgba(238, 46, 34,0.7)", letterSpacing: "0.2em", }}>{item.role}</p>
               </div>
             </footer>
           </motion.blockquote>

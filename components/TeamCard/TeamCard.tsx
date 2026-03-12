@@ -114,7 +114,7 @@ export default function TeamCard({ member, index }: Props) {
                         </h3>
                         <div style={{ width: "24px", height: "1px", background: "rgba(238, 46, 34, 0.4)", marginBottom: "0.75rem" }} />
                     </div>
-                    <p style={{ fontSize: "0.65rem", color: "#ee2e22", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 800 }}>
+                    <p style={{ fontSize: "0.65rem", color: "#ee2e22", letterSpacing: "0.25em",  fontWeight: 800 }}>
                         {member.role}
                     </p>
                     <span style={{

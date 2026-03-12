@@ -24,7 +24,7 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
           <motion.p
             style={{
               fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22",
-              textTransform: "uppercase", marginBottom: "1.5rem",
+               marginBottom: "1.5rem",
             }}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
             <Link
               href="/projects"
               style={{
-                fontSize: "0.65rem", letterSpacing: "0.25em", textTransform: "uppercase",
+                fontSize: "0.65rem", letterSpacing: "0.25em", 
                 textDecoration: "none", color: "#005c97",
                 borderBottom: "1px solid #005c97", paddingBottom: "3px",
                 transition: "all 0.3s ease",
@@ -119,7 +119,7 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
           <Link
             href="/projects"
             style={{
-              fontSize: "0.6rem", letterSpacing: "0.3em", textTransform: "uppercase",
+              fontSize: "0.6rem", letterSpacing: "0.3em", 
               textDecoration: "none", color: "#ffffff",
               background: "#005c97", padding: "1.25rem 2.5rem",
               transition: "all 0.3s ease",

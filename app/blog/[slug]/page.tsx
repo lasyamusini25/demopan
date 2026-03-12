@@ -40,10 +40,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <div style={{ maxWidth: "720px", margin: "0 auto", padding: "0 2rem" }}>
         <div style={{ marginBottom: "2.5rem" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem" }}>
-            <Link href="/blog" style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22", textDecoration: "none" }}>
+            <Link href="/blog" style={{ fontSize: "0.65rem", fontWeight: 700,  letterSpacing: "0.15em", color: "#ee2e22", textDecoration: "none" }}>
               ← Back to Insights
             </Link>
-            <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22" }}>
+            <span style={{ fontSize: "0.65rem", fontWeight: 700,  letterSpacing: "0.15em", color: "#ee2e22" }}>
               {post.category}
             </span>
           </div>
@@ -120,7 +120,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             display: "flex", alignItems: "center", justifyContent: "center",
             width: "100%", background: "#005c97", color: "#ffffff",
             padding: "1rem", fontSize: "0.65rem", fontWeight: 700,
-            letterSpacing: "0.2em", textTransform: "uppercase",
+            letterSpacing: "0.2em", 
             textDecoration: "none", borderRadius: "2px",
           }}
           className="btn-dark-hover"

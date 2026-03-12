@@ -28,7 +28,7 @@ export default function ProjectsClient() {
               color: filter === item ? "#ffffff" : "#005c97",
               fontSize: "0.65rem",
               letterSpacing: "0.15em",
-              textTransform: "uppercase",
+              
               cursor: "pointer",
               transition: "all 0.25s",
               fontFamily: "inherit",

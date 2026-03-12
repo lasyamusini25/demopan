@@ -73,7 +73,7 @@ export default function ServicesSection() {
           maxWidth: "800px", margin: "0 auto 6rem",
         }}>
           <motion.p
-            style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}
+            style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", marginBottom: "1.5rem" }}
             initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           >
             Why Choose Us

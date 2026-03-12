@@ -120,7 +120,7 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
                   fontSize: "0.55rem",
                   letterSpacing: "0.38em",
                   color: "#ee2e22",
-                  textTransform: "uppercase",
+                  
                   background: "rgba(12,12,12,0.6)",
                   backdropFilter: "blur(12px)",
                   border: "1px solid rgba(238, 46, 34,0.25)",
@@ -169,11 +169,11 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
                 }}
                   className="group-hover:opacity-100"
                 >
-                  <span style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 700 }}>
+                  <span style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.15em",  fontWeight: 700 }}>
                     {project.location}
                   </span>
                   <span style={{ width: "6px", height: "1px", background: "#ee2e22", flexShrink: 0 }} />
-                  <span style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.15em", textTransform: "uppercase", fontWeight: 700 }}>{project.year}</span>
+                  <span style={{ fontSize: "0.7rem", color: "rgba(255,255,255,0.9)", letterSpacing: "0.15em",  fontWeight: 700 }}>{project.year}</span>
                 </div>
               </div>
 
@@ -189,7 +189,7 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
               >
                 <span style={{
                   fontSize: "0.55rem", letterSpacing: "0.35em", color: "#ffffff",
-                  textTransform: "uppercase",
+                  
                   display: "flex",
                   alignItems: "center",
                   gap: "0.75rem",

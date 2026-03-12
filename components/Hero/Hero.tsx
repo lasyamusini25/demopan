@@ -106,7 +106,6 @@ export default function Hero() {
               fontSize: "0.6rem",
               letterSpacing: "0.45em",
               color: "rgba(255,255,255,0.55)",
-              textTransform: "uppercase",
             }}>
               Hyderabad · Real Estate Developer
             </p>
@@ -146,7 +145,7 @@ export default function Hero() {
             {/* Accent word in gold */}
             <span style={{ display: "block", overflow: "hidden", paddingBottom: "0.15em" }}>
               <motion.span
-                style={{ display: "block", color: "#ee2e22", fontStyle: "italic", textTransform: "uppercase", fontWeight: 800 }}
+                style={{ display: "block", color: "#ee2e22", fontStyle: "italic", fontWeight: 800 }}
                 initial={{ y: "105%", opacity: 0 }}
                 animate={{ y: "0%", opacity: 1 }}
                 transition={{ duration: 1, delay: 0.95, ease: [0.16, 1, 0.3, 1] }}
@@ -189,7 +188,6 @@ export default function Hero() {
                 style={{
                   fontSize: "0.75rem",
                   letterSpacing: "0.25em",
-                  textTransform: "uppercase",
                   color: "#ffffff",
                   textDecoration: "none",
                   background: "linear-gradient(90deg, #ee2e22 0%, #f99918 100%)",
@@ -217,7 +215,6 @@ export default function Hero() {
                 style={{
                   fontSize: "0.75rem",
                   letterSpacing: "0.25em",
-                  textTransform: "uppercase",
                   color: "#ffffff",
                   textDecoration: "none",
                   background: "linear-gradient(90deg, #005c97 0%, #1e96d3 100%)",
@@ -241,7 +238,6 @@ export default function Hero() {
                 style={{
                   fontSize: "0.75rem",
                   letterSpacing: "0.25em",
-                  textTransform: "uppercase",
                   color: "rgba(255,255,255,0.8)",
                   textDecoration: "none",
                   transition: "color 0.25s",
@@ -276,7 +272,6 @@ export default function Hero() {
             fontSize: "0.55rem",
             letterSpacing: "0.3em",
             color: "rgba(255,255,255,0.35)",
-            textTransform: "uppercase",
             writingMode: "vertical-rl",
             marginBottom: "0.5rem",
           }}>Scroll</p>
@@ -308,7 +303,7 @@ export default function Hero() {
           border: "1px solid rgba(0, 92, 151, 0.3)",
           padding: "1.5rem 2rem",
         }}>
-          <p style={{ fontSize: "0.55rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "0.5rem" }}>Est.</p>
+          <p style={{ fontSize: "0.55rem", letterSpacing: "0.4em", color: "#ee2e22", marginBottom: "0.5rem" }}>Est.</p>
           <p style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#ffffff", lineHeight: 1, fontWeight: 600 }}>2010</p>
         </div>
       </motion.div>
@@ -349,7 +344,6 @@ export default function Hero() {
               <span style={{
                 fontSize: "0.6rem",
                 letterSpacing: "0.2em",
-                textTransform: "uppercase",
                 color: "rgba(255,255,255,0.4)",
               }}>{stat.label}</span>
             </div>

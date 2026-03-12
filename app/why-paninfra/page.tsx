@@ -121,7 +121,7 @@ export default function WhyPanInfraPage() {
         <div style={{ maxWidth: "1280px", margin: "0 auto", position: "relative" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem" }}>
             <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase" }}>
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", }}>
               Our Properties
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function WhyPanInfraPage() {
         <div style={{ textAlign: "center", marginBottom: "5rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", justifyContent: "center" }}>
             <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase" }}>
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", }}>
               Why Pan Infra
             </p>
             <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
@@ -450,7 +450,7 @@ export default function WhyPanInfraPage() {
                     style={{
                       fontSize: "0.6rem",
                       letterSpacing: "0.2em",
-                      textTransform: "uppercase",
+
                       color: "#ee2e22",
                       textDecoration: "none",
                       display: "inline-flex",
@@ -476,7 +476,7 @@ export default function WhyPanInfraPage() {
       {/* ── Final CTA ─────────────────────────────── */}
       <section style={{ background: "#005c97", padding: "6rem 2.5rem", borderTop: "1px solid rgba(238, 46, 34,0.12)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", marginBottom: "1.5rem" }}>
             Ready to invest in Hyderabad real estate?
           </p>
           <h2
@@ -502,7 +502,7 @@ export default function WhyPanInfraPage() {
               textDecoration: "none",
               fontSize: "0.65rem",
               letterSpacing: "0.25em",
-              textTransform: "uppercase",
+
               fontWeight: 500,
             }}
           >

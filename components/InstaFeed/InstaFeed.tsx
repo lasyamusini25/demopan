@@ -18,7 +18,7 @@ export default function InstaFeed() {
 
                 {/* Header */}
                 <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-                    <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", color: "#ee2e22", textTransform: "uppercase", fontWeight: 700, marginBottom: "1rem" }}>
+                    <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", color: "#ee2e22",  fontWeight: 700, marginBottom: "1rem" }}>
                         Follow Us On Instagram
                     </p>
                     <h2 style={{

@@ -77,29 +77,38 @@ export default function Navbar() {
           }}
           className="hidden md:flex"
         >
-          {NAV_LINKS.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                style={{
-                  fontSize: "0.75rem",
-                  letterSpacing: "0.25em",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                  color:
-                    pathname === item.href
-                      ? "#ee2e22"
-                      : isDarkPage && !scrolled
-                        ? "rgba(255,255,255,0.85)"
-                        : "#005c97",
-                  transition: "color 0.25s",
-                  fontWeight: 600,
-                }}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {NAV_LINKS.map((item) => {
+            const isActive = pathname === item.href;
+            const defaultColor = isActive
+              ? "#ee2e22"
+              : isDarkPage && !scrolled
+                ? "rgba(255,255,255,0.85)"
+                : "#005c97";
+
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  style={{
+                    fontSize: "0.75rem",
+                    letterSpacing: "0.25em",
+                    textDecoration: "none",
+                    color: defaultColor,
+                    transition: "color 0.25s",
+                    fontWeight: 600,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = "#ee2e22";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = defaultColor;
+                  }}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
           <li>
             <a
               href={SITE.whatsapp}
@@ -108,7 +117,6 @@ export default function Navbar() {
               style={{
                 fontSize: "0.7rem",
                 letterSpacing: "0.22em",
-                textTransform: "uppercase",
                 textDecoration: "none",
                 padding: "0.75rem 1.75rem",
                 border: "1px solid #ee2e22",
@@ -174,24 +182,35 @@ export default function Navbar() {
             }}
           >
             <ul style={{ listStyle: "none", padding: "3rem 1.25rem", margin: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: "1.75rem" }}>
-              {NAV_LINKS.map((item) => (
-                <li key={item.href} style={{ textAlign: "center" }}>
-                  <Link
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    style={{
-                      fontFamily: "var(--font-playfair, Georgia, serif)",
-                      fontSize: "1.5rem",
-                      letterSpacing: "0.05em",
-                      color: pathname === item.href ? "#ee2e22" : "#005c97",
-                      textDecoration: "none",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {NAV_LINKS.map((item) => {
+                const isActive = pathname === item.href;
+                const mobileDefaultColor = isActive ? "#ee2e22" : "#005c97";
+
+                return (
+                  <li key={item.href} style={{ textAlign: "center" }}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      style={{
+                        fontFamily: "var(--font-playfair, Georgia, serif)",
+                        fontSize: "1.5rem",
+                        letterSpacing: "0.05em",
+                        color: mobileDefaultColor,
+                        textDecoration: "none",
+                        transition: "color 0.25s",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#ee2e22";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = mobileDefaultColor;
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </motion.div>
         )}

@@ -59,7 +59,7 @@ export default function Loader() {
               style={{
                 fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                 fontSize: "0.6rem", letterSpacing: "0.55em", color: "#ee2e22",
-                textTransform: "uppercase", marginBottom: "1.25rem",
+                 marginBottom: "1.25rem",
               }}
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -119,7 +119,7 @@ export default function Loader() {
             style={{
               position: "absolute", bottom: "2.5rem",
               fontSize: "0.55rem", letterSpacing: "0.35em",
-              color: "rgba(255,255,255,0.2)", textTransform: "uppercase",
+              color: "rgba(255,255,255,0.2)", 
             }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

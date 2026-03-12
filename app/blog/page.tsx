@@ -43,7 +43,7 @@ export default function BlogIndex() {
                             </div>
                             <div style={{ maxWidth: "800px" }}>
                                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1rem" }}>
-                                    <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22" }}>
+                                    <span style={{ fontSize: "0.65rem", fontWeight: 700,  letterSpacing: "0.15em", color: "#ee2e22" }}>
                                         {featuredPost.category}
                                     </span>
                                     <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "#ccc", display: "inline-block" }} />
@@ -114,7 +114,7 @@ export default function BlogIndex() {
                                     </p>
                                 </Link>
                                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                                    <span style={{ fontSize: "0.65rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: "#ee2e22" }}>{post.category}</span>
+                                    <span style={{ fontSize: "0.65rem", fontWeight: 700,  letterSpacing: "0.15em", color: "#ee2e22" }}>{post.category}</span>
                                     <span style={{ fontSize: "0.75rem", color: "#888" }}>{post.readTime}</span>
                                     <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "#ccc", display: "inline-block" }} />
                                     <span style={{ fontSize: "0.75rem", color: "#888" }}>{post.date}</span>

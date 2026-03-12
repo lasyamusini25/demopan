@@ -45,7 +45,7 @@ export default function MarqueeStrip() {
             <span style={{
               fontSize: "0.65rem",
               letterSpacing: "0.4em",
-              textTransform: "uppercase",
+              
               color: "#ffffff",
               padding: "0 3rem",
               fontWeight: 600,

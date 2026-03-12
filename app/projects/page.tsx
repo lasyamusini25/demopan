@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       />
       <section style={{ background: "#005c97", padding: "10rem 2.5rem 5rem" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
-          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", textTransform: "uppercase", marginBottom: "1.5rem" }}>Our Portfolio</p>
+          <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22",  marginBottom: "1.5rem" }}>Our Portfolio</p>
           <h1 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(3rem,7vw,5.5rem)", lineHeight: 0.9, color: "#ffffff", marginBottom: "2.5rem" }}>
             Our Projects
           </h1>

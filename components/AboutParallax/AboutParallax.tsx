@@ -149,7 +149,7 @@ const OverlayCopy = ({ subheading, heading }: { subheading: string; heading: str
       <p style={{
         fontSize: "0.55rem",
         letterSpacing: "0.4em",
-        textTransform: "uppercase",
+        
         color: "#ee2e22",
         marginBottom: "1.1rem",
         textAlign: "center",
@@ -195,7 +195,7 @@ const SectionContent = ({
       fontSize: "0.6rem",
       letterSpacing: "0.45em",
       color: "#ee2e22",
-      textTransform: "uppercase",
+      
       marginBottom: "2.5rem",
     }}>
       {tag}
@@ -250,7 +250,7 @@ const SectionContent = ({
           <div style={{
             fontSize: "0.55rem",
             letterSpacing: "0.2em",
-            textTransform: "uppercase",
+            
             color: "#ee2e22",
             marginTop: "0.75rem",
           }}>{s.l}</div>
@@ -271,7 +271,7 @@ const SectionContent = ({
           gap: "0.75rem",
           fontSize: "0.75rem",
           letterSpacing: "0.25em",
-          textTransform: "uppercase",
+          
           textDecoration: "none",
           padding: "1.5rem 3.5rem",
           background: "#005c97",

@@ -32,7 +32,7 @@ export default function CTASection() {
           pointerEvents: "none",
         }} />
 
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "rgba(255, 255, 255, 0.7)", textTransform: "uppercase", marginBottom: "1.5rem" }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "rgba(255, 255, 255, 0.7)",  marginBottom: "1.5rem" }}>
           Book a Site Visit
         </p>
         <h2
@@ -57,7 +57,7 @@ export default function CTASection() {
             rel="noopener noreferrer"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.6rem",
-              fontSize: "0.75rem", letterSpacing: "0.2em", textTransform: "uppercase",
+              fontSize: "0.75rem", letterSpacing: "0.2em", 
               textDecoration: "none", padding: "1.2rem 2.75rem",
               background: "#ee2e22", color: "#ffffff",
               transition: "all 0.3s",
@@ -75,7 +75,7 @@ export default function CTASection() {
             href="/contact"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
-              fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase",
+              fontSize: "0.65rem", letterSpacing: "0.2em", 
               textDecoration: "none", padding: "1.2rem 2.75rem",
               border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.7)",
               transition: "all 0.3s",
@@ -96,7 +96,7 @@ export default function CTASection() {
             href="/projects"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
-              fontSize: "0.65rem", letterSpacing: "0.2em", textTransform: "uppercase",
+              fontSize: "0.65rem", letterSpacing: "0.2em", 
               textDecoration: "none", padding: "1.2rem 2.5rem",
               border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.7)",
               transition: "all 0.3s",
