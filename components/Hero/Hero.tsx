@@ -32,7 +32,7 @@ export default function Hero() {
         style={{ y: imageY, position: "absolute", inset: "-10% 0", minHeight: "120%", zIndex: 0 }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=2000"
+          src="/image.png"
           alt="Pan Infra – Premium Plots & Villas Hyderabad"
           fill
           style={{ objectFit: "cover" }}
@@ -115,7 +115,7 @@ export default function Hero() {
           <h1
             style={{
               fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
-              fontSize: "clamp(3rem, 7.5vw, 7.5rem)",
+              fontSize: "clamp(2.5rem, 6vw, 6rem)",
               lineHeight: 0.88,
               color: "#ffffff",
               margin: "0 0 1rem",
