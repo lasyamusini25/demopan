@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import CTASection from "@/components/CTASection/CTASection";
 import MarqueeStrip from "@/components/MarqueeStrip/MarqueeStrip";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
+import WhyPanInfraStrip from "@/components/WhyPanInfraStrip/WhyPanInfraStrip";
 import { PROJECTS } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo";
 
@@ -30,6 +31,7 @@ export default function Home() {
     <>
       <Hero />
       <MarqueeStrip />
+      <WhyPanInfraStrip />
       <ProjectCarousel projects={PROJECTS.slice(0, 6)} />
       <AboutSection />
       <MarqueeStrip />
