@@ -10,9 +10,10 @@ interface Props {
   project: Project;
   index?: number;
   featured?: boolean;
+  cardAspectRatio?: string;
 }
 
-export default function ProjectCard({ project, index = 0, featured = false }: Props) {
+export default function ProjectCard({ project, index = 0, featured = false, cardAspectRatio }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -80,7 +81,7 @@ export default function ProjectCard({ project, index = 0, featured = false }: Pr
               style={{
                 position: "relative",
                 width: "100%",
-                aspectRatio: featured ? "21/9" : index % 3 === 0 ? "16/9" : "2/1",
+                aspectRatio: cardAspectRatio ?? (featured ? "21/9" : index % 3 === 0 ? "16/9" : "2/1"),
                 overflow: "hidden",
               }}
             >
