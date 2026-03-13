@@ -1,135 +1,153 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-const ONE_SECOND = 1000;
-const AUTO_DELAY = ONE_SECOND * 10;
-const DRAG_BUFFER = 50;
-
-const SPRING_OPTIONS = {
-    type: "spring",
-    mass: 3,
-    stiffness: 400,
-    damping: 50,
-} as const;
+const AUTO_DELAY = 4000;
 
 interface SwipeCarouselProps {
     images: string[];
 }
 
 export const SwipeCarousel = ({ images }: SwipeCarouselProps) => {
-    const [imgIndex, setImgIndex] = useState(0);
+    const [index, setIndex] = useState(0);
+    const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const startXRef = useRef<number | null>(null);
 
-    const dragX = useMotionValue(0);
+    const goTo = useCallback((i: number) => {
+        setIndex((i + images.length) % images.length);
+    }, [images.length]);
 
+    const prev = useCallback(() => goTo(index - 1), [index, goTo]);
+    const next = useCallback(() => goTo(index + 1), [index, goTo]);
+
+    // Auto-scroll
     useEffect(() => {
-        const intervalRef = setInterval(() => {
-            const x = dragX.get();
+        timerRef.current = setTimeout(next, AUTO_DELAY);
+        return () => { if (timerRef.current) clearTimeout(timerRef.current); };
+    }, [index, next]);
 
-            if (x === 0) {
-                setImgIndex((pv) => {
-                    if (pv === images.length - 1) {
-                        return 0;
-                    }
-                    return pv + 1;
-                });
-            }
-        }, AUTO_DELAY);
-
-        return () => clearInterval(intervalRef);
-    }, [images.length, dragX]);
-
-    const onDragEnd = () => {
-        const x = dragX.get();
-
-        if (x <= -DRAG_BUFFER && imgIndex < images.length - 1) {
-            setImgIndex((pv) => pv + 1);
-        } else if (x >= DRAG_BUFFER && imgIndex > 0) {
-            setImgIndex((pv) => pv - 1);
-        }
+    // Touch/swipe support
+    const onTouchStart = (e: React.TouchEvent) => { startXRef.current = e.touches[0].clientX; };
+    const onTouchEnd = (e: React.TouchEvent) => {
+        if (startXRef.current === null) return;
+        const diff = startXRef.current - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) { if (diff > 0) next(); else prev(); }
+        startXRef.current = null;
     };
 
     return (
-        <div className="relative overflow-hidden bg-neutral-950 py-12 rounded-2xl">
-            <motion.div
-                drag="x"
-                dragConstraints={{
-                    left: 0,
-                    right: 0,
-                }}
-                style={{
-                    x: dragX,
-                }}
-                animate={{
-                    translateX: `-${imgIndex * 100}%`,
-                }}
-                transition={SPRING_OPTIONS}
-                onDragEnd={onDragEnd}
-                className="flex w-full cursor-grab items-center active:cursor-grabbing"
-            >
-                <Images images={images} imgIndex={imgIndex} />
-            </motion.div>
-
-            <Dots images={images} imgIndex={imgIndex} setImgIndex={setImgIndex} />
-            <GradientEdges />
-        </div>
-    );
-};
-
-const Images = ({ images, imgIndex }: { images: string[]; imgIndex: number }) => {
-    return (
-        <>
-            {images.map((imgSrc, idx) => {
-                return (
-                    <motion.div
-                        key={idx}
-                        animate={{
-                            scale: imgIndex === idx ? 0.95 : 0.85,
-                        }}
-                        transition={SPRING_OPTIONS}
-                        className="w-full h-[40vh] min-h-[300px] max-h-[500px] shrink-0 rounded-xl bg-neutral-800 relative overflow-hidden"
-                    >
-                        <Image
-                            src={imgSrc}
-                            alt={`Gallery image ${idx + 1}`}
-                            fill
-                            className="object-cover"
-                            sizes="100vw"
-                        />
-                    </motion.div>
-                );
-            })}
-        </>
-    );
-};
-
-const Dots = ({ images, imgIndex, setImgIndex }: { images: string[]; imgIndex: number; setImgIndex: React.Dispatch<React.SetStateAction<number>> }) => {
-    return (
-        <div className="mt-6 flex w-full justify-center gap-2">
-            {images.map((_, idx) => {
-                return (
-                    <button
-                        key={idx}
-                        onClick={() => setImgIndex(idx)}
-                        style={{
-                            transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                        }}
-                        className={`h-2 rounded-full ${idx === imgIndex ? "bg-[#ee2e22] w-8" : "bg-neutral-600 w-2 hover:bg-neutral-400"
-                            }`}
+        <div
+            style={{ position: "relative", width: "100%", aspectRatio: "16/9", background: "#0a0a0a", borderRadius: "0.75rem", overflow: "hidden" }}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
+        >
+            {/* Slides */}
+            {images.map((src, i) => (
+                <div
+                    key={i}
+                    style={{
+                        position: "absolute", inset: 0,
+                        opacity: i === index ? 1 : 0,
+                        transition: "opacity 0.6s ease",
+                        pointerEvents: i === index ? "auto" : "none",
+                    }}
+                >
+                    <Image
+                        src={src}
+                        alt={`Project image ${i + 1}`}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        sizes="(max-width: 768px) 100vw, 1280px"
+                        priority={i === 0}
                     />
-                );
-            })}
-        </div>
-    );
-};
+                </div>
+            ))}
 
-const GradientEdges = () => {
-    return (
-        <>
-            <div className="pointer-events-none absolute bottom-0 left-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-r from-neutral-950/50 to-neutral-950/0" />
-            <div className="pointer-events-none absolute bottom-0 right-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-l from-neutral-950/50 to-neutral-950/0" />
-        </>
+            {/* Arrow — Prev */}
+            <button
+                onClick={prev}
+                aria-label="Previous image"
+                style={{
+                    position: "absolute", left: "1.25rem", top: "50%", transform: "translateY(-50%)",
+                    zIndex: 10, width: "44px", height: "44px", borderRadius: "50%",
+                    background: "rgba(0,0,0,0.55)", border: "1px solid rgba(255,255,255,0.15)",
+                    color: "#ffffff", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+                    backdropFilter: "blur(8px)", transition: "background 0.2s",
+                }}
+                onMouseEnter={e => (e.currentTarget.style.background = "#005c97")}
+                onMouseLeave={e => (e.currentTarget.style.background = "rgba(0,0,0,0.55)")}
+            >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+
+            {/* Arrow — Next */}
+            <button
+                onClick={next}
+                aria-label="Next image"
+                style={{
+                    position: "absolute", right: "1.25rem", top: "50%", transform: "translateY(-50%)",
+                    zIndex: 10, width: "44px", height: "44px", borderRadius: "50%",
+                    background: "rgba(0,0,0,0.55)", border: "1px solid rgba(255,255,255,0.15)",
+                    color: "#ffffff", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+                    backdropFilter: "blur(8px)", transition: "background 0.2s",
+                }}
+                onMouseEnter={e => (e.currentTarget.style.background = "#005c97")}
+                onMouseLeave={e => (e.currentTarget.style.background = "rgba(0,0,0,0.55)")}
+            >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+
+            {/* Counter */}
+            <div style={{
+                position: "absolute", top: "1rem", right: "1.25rem", zIndex: 10,
+                fontSize: "0.7rem", color: "rgba(255,255,255,0.7)", letterSpacing: "0.1em",
+                background: "rgba(0,0,0,0.45)", backdropFilter: "blur(8px)",
+                padding: "0.3rem 0.75rem", borderRadius: "9999px",
+            }}>
+                {String(index + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}
+            </div>
+
+            {/* Dots */}
+            <div style={{
+                position: "absolute", bottom: "1rem", left: "50%", transform: "translateX(-50%)",
+                display: "flex", gap: "6px", zIndex: 10,
+            }}>
+                {images.map((_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => goTo(i)}
+                        aria-label={`Go to image ${i + 1}`}
+                        style={{
+                            height: "6px",
+                            width: i === index ? "28px" : "6px",
+                            borderRadius: "9999px",
+                            background: i === index ? "#ee2e22" : "rgba(255,255,255,0.4)",
+                            border: "none", cursor: "pointer", padding: 0,
+                            transition: "width 0.3s ease, background 0.3s ease",
+                        }}
+                    />
+                ))}
+            </div>
+
+            {/* Progress bar */}
+            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "3px", background: "rgba(255,255,255,0.1)", zIndex: 10 }}>
+                <div
+                    key={index}
+                    style={{
+                        height: "100%", background: "#005c97",
+                        animation: `progress ${AUTO_DELAY}ms linear forwards`,
+                    }}
+                />
+            </div>
+
+            <style>{`
+                @keyframes progress { from { width: 0% } to { width: 100% } }
+            `}</style>
+        </div>
     );
 };
