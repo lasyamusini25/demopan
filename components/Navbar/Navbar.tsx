@@ -36,7 +36,7 @@ export default function Navbar() {
       }}
     >
       <nav
-        className="px-5 py-4 md:px-10 md:py-6 min-h-[80px] md:min-h-[110px] flex justify-center md:justify-between items-center relative"
+        className="px-5 py-2 md:px-10 md:py-3 min-h-[60px] md:min-h-[72px] flex justify-center md:justify-between items-center relative"
         style={{
           maxWidth: "1280px",
           margin: "0 auto",
@@ -55,8 +55,8 @@ export default function Navbar() {
           <Image
             src="/images/Pan-Infra-Logo.png.webp"
             alt="Pan Infra Logo"
-            width={140}
-            height={48}
+            width={180}
+            height={60}
             style={{
               objectFit: "contain",
               filter: isDarkPage && !scrolled ? "brightness(0) invert(1)" : "none",
@@ -91,7 +91,7 @@ export default function Navbar() {
                   href={item.href}
                   style={{
                     fontSize: "0.75rem",
-                    letterSpacing: "0.25em",
+                    letterSpacing: "0.1em",
                     textDecoration: "none",
                     color: defaultColor,
                     transition: "color 0.25s",
@@ -116,24 +116,24 @@ export default function Navbar() {
               rel="noopener noreferrer"
               style={{
                 fontSize: "0.7rem",
-                letterSpacing: "0.22em",
+                letterSpacing: "0.08em",
                 textDecoration: "none",
-                padding: "0.75rem 1.75rem",
-                border: "1px solid #ee2e22",
-                color: "#ee2e22",
+                padding: "0.65rem 1.5rem",
+                border: "none",
+                background: "#ee2e22",
+                color: "#ffffff",
                 transition: "all 0.3s ease",
-                fontWeight: 800,
+                fontWeight: 700,
                 display: "flex",
                 alignItems: "center",
                 gap: "0.5rem",
+                borderRadius: "4px",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = "#ee2e22";
-                e.currentTarget.style.color = "#ffffff";
+                e.currentTarget.style.background = "#c41f10";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = "transparent";
-                e.currentTarget.style.color = "#ee2e22";
+                e.currentTarget.style.background = "#ee2e22";
               }}
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">

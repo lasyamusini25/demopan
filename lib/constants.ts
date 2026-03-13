@@ -134,7 +134,7 @@ export const TIMELINE = [
 export const PROJECTS: Project[] = [
   {
     slug: "janwada-project",
-    title: "Janwada Project",
+    title: "Janwada Farmhouse",
     category: "Residential Plots",
     coverImage: "/covers/NEOPOLIS_JANWADA.png",
     heroImage: "/covers/NEOPOLIS_JANWADA.png",
@@ -143,7 +143,7 @@ export const PROJECTS: Project[] = [
     client: "Open for Booking",
     area: "85 Acres · 450 Plots",
     description:
-      "Premium residential plot development in the serene Janwada area. Features world-class amenities and excellent connectivity to the main growth corridors.",
+      "Janwada Farmhouse offers premium open farmhouse plots in the serene, green belt of Janwada — one of Hyderabad's most sought-after villa corridors. Escape the city without leaving it behind. These HMDA-approved farmhouse plots are ideal for weekend retreats, private farmsteads, or long-term investment in appreciating land.",
     gallery: [
       "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200",
@@ -151,16 +151,16 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "kakatiya-daimond-heights",
-    title: "Kakatiya Daimond Heights",
+    title: "Kakatiya Diamond Heights",
     category: "Gated Community",
-    coverImage: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
-    heroImage: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1600",
-    location: "Shadnagar, Hyderabad",
+    coverImage: "/covers/kakatiya.png",
+    heroImage: "/covers/kakatiya.png",
+    location: "Velimala, Hyderabad",
     year: "2024",
-    client: "Open for Booking",
-    area: "110 Acres · 600 Plots",
+    client: "Ready to Move",
+    area: "110 Acres · 600 Apartments",
     description:
-      "A grand gated community offering a blend of luxury and nature. Experience elevated living with Kakatiya Daimond Heights.",
+      "Kakatiya Diamond Heights is a ready-to-move premium apartment community nestled in the lush surroundings of Velimala. Thoughtfully designed residences with world-class amenities, landscaped gardens, and excellent connectivity make this an ideal choice for families seeking immediate possession and a superior quality of life.",
     gallery: [
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
@@ -172,12 +172,12 @@ export const PROJECTS: Project[] = [
     category: "Gated Community",
     coverImage: "/covers/DUKES_URBAN_VILLAGE.png",
     heroImage: "/covers/DUKES_URBAN_VILLAGE.png",
-    location: "Tukkuguda, Hyderabad",
+    location: "Kothur, Hyderabad",
     year: "2024",
     client: "Open for Booking",
     area: "90 Acres · 500 Plots",
     description:
-      "Highway facing project. Urban living redefined in a village-like setting. Dukes Urban Village offers the perfect balance of modern comfort and natural beauty.",
+      "Dukes Urban Village is a premium open villa plots community located on the high-growth Kothur corridor, directly highway-facing with seamless access to Hyderabad's southern growth belt. Designed for those who value space, privacy, and strong appreciation — these DTCP-approved villa plots offer the freedom to build your dream home at your own pace.",
     gallery: [
       "/current/WhatsApp Image 2026-03-11 at 15.10.29.jpeg",
       "/current/WhatsApp Image 2026-03-11 at 15.10.30 (1).jpeg",
@@ -207,12 +207,12 @@ export const PROJECTS: Project[] = [
     category: "Premium Villas",
     coverImage: "/covers/Dukes_western_county.png",
     heroImage: "/covers/Dukes_western_county.png",
-    location: "Mokila, Hyderabad",
+    location: "Shankarpally, Hyderabad",
     year: "2024",
     client: "Open for Booking",
-    area: "75 Acres · 300 Villas",
+    area: "75 Acres · 300 Plots",
     description:
-      "Exclusive premium villas in the heart of the western growth corridor. Dukes Western County is built for those who seek class and comfort.",
+      "Dukes Western County brings premium open villa plots to the rapidly appreciating Shankarpally corridor — the preferred address for Hyderabad's western growth story. Set amidst clean air and wide open landscapes, these HMDA-approved villa plots offer generous plot sizes, tree-lined avenues, and proximity to top IT hubs, schools, and hospitals.",
     gallery: [
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
@@ -224,12 +224,12 @@ export const PROJECTS: Project[] = [
     category: "Residential Plots",
     coverImage: "/covers/DukesCounty_Velimala.png",
     heroImage: "/covers/DukesCounty_Velimala.png",
-    location: "Mokila, Hyderabad",
+    location: "Velimala, Hyderabad",
     year: "2024",
     client: "Open for Booking",
     area: "120 Acres · 900 Plots",
     description:
-      "A sprawling residential plot project in Mokila. Dukes County is designed for long-term growth and high-quality living.",
+      "Dukes County is a landmark open villa plots community in Velimala — a prime investment destination in Hyderabad's southern growth corridor. Spanning over 120 acres with wide internal roads, landscaped greens, and DTCP approval, Dukes County is crafted for buyers who want premium land at a compelling value with strong long-term appreciation.",
     gallery: [
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80&w=1200",
