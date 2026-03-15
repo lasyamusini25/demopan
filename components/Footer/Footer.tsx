@@ -32,7 +32,7 @@ export default function Footer() {
                 }}
               />
             </Link>
-            <p style={{ fontSize: "0.75rem", color: "#005c97", letterSpacing: "0.3em", marginBottom: "1.25rem", fontWeight: 800 }}>
+            <p style={{ fontSize: "0.75rem", color: "#005c97", letterSpacing: "0.08em", marginBottom: "1.25rem", fontWeight: 800 }}>
               Established 2010
             </p>
             <p style={{ fontSize: "0.9rem", color: "#666666", lineHeight: 1.8 }}>
@@ -42,7 +42,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation */}
           <div>
-            <p style={{ fontSize: "0.7rem", letterSpacing: "0.32em", color: "#005c97", marginBottom: "1.75rem", fontWeight: 950 }}>Explore Our Vision</p>
+            <p style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#005c97", marginBottom: "1.75rem", fontWeight: 950 }}>Explore Our Vision</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.8rem" }}>
               {NAV_LINKS.map(link => (
                 <li key={link.href}>
@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Column 3: Reach Us */}
           <div>
-            <p style={{ fontSize: "0.7rem", letterSpacing: "0.32em", color: "#005c97", marginBottom: "1.75rem", fontWeight: 950 }}>Reach Us Below</p>
+            <p style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#005c97", marginBottom: "1.75rem", fontWeight: 950 }}>Reach Us Below</p>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               <a
                 href={SITE.whatsapp}
@@ -97,7 +97,7 @@ export default function Footer() {
 
           {/* Column 4: Location */}
           <div>
-            <p style={{ fontSize: "0.7rem", letterSpacing: "0.32em", color: "#005c97", marginBottom: "1.75rem", fontWeight: 950 }}>Pan Infra Spaces Pvt Ltd</p>
+            <p style={{ fontSize: "0.7rem", letterSpacing: "0.08em", color: "#005c97", marginBottom: "1.75rem", fontWeight: 950 }}>Pan Infra Spaces Pvt Ltd</p>
             <div style={{ marginBottom: "1.5rem" }}>
               <a
                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SITE.address)}`}
@@ -154,7 +154,7 @@ export default function Footer() {
                   fontSize: "0.75rem",
                   color: "#005c97",
                   textDecoration: "none",
-                  letterSpacing: "0.15em",
+                  letterSpacing: "0.05em",
                   fontWeight: 700,
                   transition: "color 0.2s"
                 }}

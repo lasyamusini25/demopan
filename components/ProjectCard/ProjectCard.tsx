@@ -53,12 +53,15 @@ export default function ProjectCard({ project, index = 0, featured = false, card
       style={{
         perspective: "1000px",
         breakInside: "avoid",
-        marginBottom: featured ? 0 : "2rem",
+        marginBottom: 0,
+        borderRadius: "4px",
+        overflow: "hidden",
       }}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-8%" }}
       transition={{ duration: 0.8, delay: index * 0.08, ease: [0.25, 1, 0.5, 1] }}
+      whileHover={{ boxShadow: "0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(238,46,34,0.3)" }}
     >
       <motion.div
         style={{

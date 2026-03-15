@@ -3,7 +3,7 @@ import Hero from "@/components/Hero/Hero";
 import ProjectCarousel from "@/components/ProjectCarousel/ProjectCarousel";
 import AboutSection from "@/components/AboutSection/AboutSection";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
-import Testimonials from "@/components/Testimonials/Testimonials";
+import GoogleReviews from "@/components/GoogleReviews/GoogleReviews";
 import CTASection from "@/components/CTASection/CTASection";
 import MarqueeStrip from "@/components/MarqueeStrip/MarqueeStrip";
 import InstaFeed from "@/components/InstaFeed/InstaFeed";
@@ -36,7 +36,7 @@ export default function Home() {
       <AboutSection />
       <MarqueeStrip />
       <ServicesSection />
-      <Testimonials />
+      <GoogleReviews />
       <InstaFeed />
       <CTASection />
     </>

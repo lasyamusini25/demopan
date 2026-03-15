@@ -65,7 +65,7 @@ const SECTIONS = [
 ];
 
 export const AboutParallax = () => (
-  <div style={{ background: "#f8f6f2", paddingBottom: "2rem" }}>
+  <div style={{ paddingBottom: "2rem" }}>
     {SECTIONS.map((s) => (
       <TextParallaxContent
         key={s.subheading}
@@ -92,7 +92,7 @@ const TextParallaxContent = ({
 }) => (
   /* px-0 on mobile, px-3 on md+ so image is edge-to-edge on small screens */
   <div className="px-0 md:px-3 mb-6 md:mb-0">
-    <div className="relative h-[60vh] md:h-[90vh]">
+    <div className="relative h-[50vh] md:h-[70vh]">
       <StickyImage imgUrl={imgUrl} />
       <OverlayCopy heading={heading} subheading={subheading} />
     </div>
@@ -119,7 +119,7 @@ const StickyImage = ({ imgUrl }: { imgUrl: string }) => {
         scale,
       }}
       /* rounded-none on mobile, rounded-2xl on md+ */
-      className="sticky z-0 overflow-hidden top-3 h-[60vh] md:h-[calc(90vh-24px)] rounded-none md:rounded-2xl"
+      className="sticky z-0 overflow-hidden top-3 h-[50vh] md:h-[calc(70vh-24px)] rounded-none md:rounded-2xl"
     >
       <div style={{
         position: "absolute",
@@ -144,7 +144,7 @@ const OverlayCopy = ({ subheading, heading }: { subheading: string; heading: str
     <motion.div
       ref={targetRef}
       style={{ y, opacity }}
-      className="absolute left-0 top-0 flex h-[60vh] md:h-[90vh] w-full flex-col items-center justify-center text-white px-8 md:px-16"
+      className="absolute left-0 top-0 flex h-[50vh] md:h-[70vh] w-full flex-col items-center justify-center text-white px-8 md:px-16"
     >
       <p style={{
         fontSize: "0.55rem",
@@ -185,7 +185,7 @@ const SectionContent = ({
   <div style={{
     maxWidth: "800px",
     margin: "0 auto",
-    padding: "8rem 2rem",
+    padding: "4rem 2rem",
     textAlign: "center",
     position: "relative"
   }}>
@@ -205,21 +205,21 @@ const SectionContent = ({
     <h3 style={{
       fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
       fontSize: "clamp(2rem, 5vw, 4rem)",
-      color: "#005c97",
+      color: "#ffffff",
       lineHeight: 1.1,
       fontWeight: 700,
-      marginBottom: "4.5rem",
+      marginBottom: "2rem",
     }}>
       {heading}
     </h3>
 
     {/* Body text */}
-    <div style={{ marginBottom: "6rem" }}>
+    <div style={{ marginBottom: "2.5rem" }}>
       {body.map((para, i) => (
         <p key={i} style={{
           fontSize: "1.1rem",
           lineHeight: 2,
-          color: "#555555",
+          color: "rgba(255,255,255,0.75)",
           marginBottom: "2.5rem",
           textAlign: "center",
           maxWidth: "700px",
@@ -235,15 +235,15 @@ const SectionContent = ({
       display: "flex",
       flexWrap: "wrap",
       justifyContent: "center",
-      gap: "4rem",
-      marginBottom: "6rem"
+      gap: "3rem",
+      marginBottom: "2.5rem"
     }}>
       {stats.map(s => (
         <div key={s.l} style={{ textAlign: "center" }}>
           <div style={{
             fontFamily: "var(--font-playfair,Georgia,serif)",
             fontSize: "2.5rem",
-            color: "#005c97",
+            color: "#ffffff",
             fontWeight: 600,
             lineHeight: 1,
           }}>{s.n}</div>
@@ -259,7 +259,7 @@ const SectionContent = ({
     </div>
 
     {/* CTA button */}
-    <div style={{ display: "flex", justifyContent: "center", marginTop: "4rem" }}>
+    <div style={{ display: "flex", justifyContent: "center", marginTop: "1.5rem" }}>
       <a
         href={SITE.whatsapp}
         target="_blank"
@@ -274,11 +274,11 @@ const SectionContent = ({
           
           textDecoration: "none",
           padding: "1.5rem 3.5rem",
-          background: "#005c97",
+          background: "#ee2e22",
           color: "#ffffff",
           fontWeight: 800,
           transition: "all 0.4s ease",
-          border: "2px solid #005c97",
+          border: "2px solid #ee2e22",
         }}
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

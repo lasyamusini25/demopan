@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
@@ -87,7 +88,7 @@ export default function WhyPanInfraPage() {
   ]);
 
   return (
-    <div style={{ background: "#f8f9fa", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -100,11 +101,11 @@ export default function WhyPanInfraPage() {
       {/* ── Page header ───────────────────────────── */}
       <section
         style={{
-          background: "#005c97",
+          background: "#0A1628",
           padding: "10rem 2.5rem 6rem",
           position: "relative",
           overflow: "hidden",
-          borderBottom: "1px solid rgba(238, 46, 34,0.15)",
+          borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
         <div
@@ -145,31 +146,67 @@ export default function WhyPanInfraPage() {
       </section>
 
       {/* ── Why Choose Pan Infra Section ───────────── */}
-      <section style={{ maxWidth: "1280px", margin: "0 auto", padding: "6rem 2.5rem" }}>
+      <section style={{ maxWidth: "1280px", margin: "0 auto", padding: "8rem 2.5rem" }}>
         <div style={{ textAlign: "center", marginBottom: "5rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", justifyContent: "center" }}>
             <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
-            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", }}>
-              Why Pan Infra
+            <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "#ee2e22", textTransform: "uppercase" }}>
+              Why Choose Us
             </p>
             <div style={{ width: "28px", height: "1px", background: "#ee2e22" }} />
           </div>
           <h2
             style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
-              fontSize: "clamp(2rem,5vw,4rem)",
-              lineHeight: 1.1,
-              color: "#005c97",
-              marginBottom: "1.5rem",
-              fontWeight: 700,
+              fontSize: "clamp(2.5rem,6vw,4.5rem)",
+              lineHeight: 1,
+              color: "#ffffff",
+              marginBottom: "2rem",
+              fontWeight: 800,
             }}
           >
-            Trusted Real Estate Partner<br />Since Inception
+            Building Trust, <br />Securing Futures.
           </h2>
-          <p style={{ fontSize: "1.05rem", color: "#666666", maxWidth: "700px", margin: "0 auto", lineHeight: 1.8 }}>
-            Pan Infra has emerged as Hyderabad&apos;s most trusted name in premium plots, villas, and gated communities.
-            Our commitment to transparency, legal compliance, and customer satisfaction sets us apart.
+          <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.7)", maxWidth: "800px", margin: "0 auto 3.5rem", lineHeight: 1.8 }}>
+            Over a decade of excellence in Hyderabad&apos;s real estate landscape — premium plots, luxury villas, and gated communities with 100% transparent transactions.
           </p>
+          
+          <div style={{ display: "flex", gap: "1.5rem", justifyContent: "center", flexWrap: "wrap", marginBottom: "2rem" }}>
+            <Link
+              href="/contact"
+              style={{
+                background: "#ee2e22",
+                color: "#ffffff",
+                padding: "1.2rem 2.5rem",
+                fontSize: "0.75rem",
+                letterSpacing: "0.2em",
+                fontWeight: 700,
+                textDecoration: "none",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = "0.9")}
+              onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+            >
+              Request a Callback
+            </Link>
+            <Link
+              href="/about"
+              style={{
+                border: "1px solid rgba(255,255,255,0.3)",
+                color: "#ffffff",
+                padding: "1.2rem 2.5rem",
+                fontSize: "0.75rem",
+                letterSpacing: "0.2em",
+                fontWeight: 700,
+                textDecoration: "none",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={e => (e.currentTarget.style.background = "rgba(255,255,255,0.05)")}
+              onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
+            >
+              Learn More →
+            </Link>
+          </div>
         </div>
 
         {/* Key Benefits Grid */}
@@ -206,15 +243,21 @@ export default function WhyPanInfraPage() {
               icon: "🌏"
             },
           ].map((benefit, i) => (
-            <div
+            <motion.div
               key={i}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              whileHover={{ y: -8, boxShadow: "0 20px 48px rgba(238,46,34,0.18), 0 0 0 1px rgba(238,46,34,0.35)" }}
               style={{
-                background: "#ffffff",
-                border: "1px solid rgba(0, 92, 151,0.15)",
+                background: "rgba(255,255,255,0.07)",
+                border: "1px solid rgba(255,255,255,0.15)",
                 padding: "2.5rem 2rem",
                 position: "relative",
-                boxShadow: "0 4px 20px rgba(0,0,0,0.03)",
-                borderRadius: "8px"
+                borderRadius: "8px",
+                cursor: "default",
+                transition: "background 0.3s",
               }}
             >
               <div style={{ fontSize: "2.5rem", marginBottom: "1.5rem", color: "#ee2e22" }}>{benefit.icon}</div>
@@ -222,23 +265,23 @@ export default function WhyPanInfraPage() {
                 style={{
                   fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                   fontSize: "1.35rem",
-                  color: "#005c97",
+                  color: "#ffffff",
                   marginBottom: "1rem",
                   fontWeight: 600,
                 }}
               >
                 {benefit.title}
               </h3>
-              <p style={{ fontSize: "0.95rem", lineHeight: 1.75, color: "#555555", margin: 0 }}>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.75, color: "rgba(255,255,255,0.75)", margin: 0 }}>
                 {benefit.desc}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
 
       {/* ── Numbers & Credibility ─────────────────── */}
-      <section style={{ background: "#ffffff", padding: "5rem 2.5rem", borderTop: "1px solid rgba(0, 92, 151,0.1)", borderBottom: "1px solid rgba(0, 92, 151,0.1)" }}>
+      <section style={{ background: "rgba(0,0,0,0.15)", padding: "5rem 2.5rem", borderTop: "1px solid rgba(255,255,255,0.1)", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "4rem", textAlign: "center" }}>
             {[
@@ -247,7 +290,14 @@ export default function WhyPanInfraPage() {
               { num: "3000", label: "Acres Developed" },
               { num: "100%", label: "HMDA/DTCP Approved" },
             ].map((stat, i) => (
-              <div key={i}>
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ scale: 1.06 }}
+              >
                 <h3
                   style={{
                     fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
@@ -259,10 +309,10 @@ export default function WhyPanInfraPage() {
                 >
                   {stat.num}
                 </h3>
-                <p style={{ fontSize: "0.85rem", letterSpacing: "0.15em", color: "#005c97", textTransform: "uppercase", fontWeight: 600 }}>
+                <p style={{ fontSize: "0.85rem", letterSpacing: "0.15em", color: "rgba(255,255,255,0.8)", textTransform: "uppercase", fontWeight: 600 }}>
                   {stat.label}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -275,14 +325,14 @@ export default function WhyPanInfraPage() {
             style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2rem,4vw,3.5rem)",
-              color: "#005c97",
+              color: "#ffffff",
               marginBottom: "1rem",
               fontWeight: 700,
             }}
           >
             Your Journey with Pan Infra
           </h2>
-          <p style={{ fontSize: "1rem", color: "#666666", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
+          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
             From the first site visit to the day you hold your plot documents — a seamless, transparent, and customer-first experience.
           </p>
         </div>
@@ -318,11 +368,12 @@ export default function WhyPanInfraPage() {
             <div key={i} style={{ position: "relative" }}>
               <div
                 style={{
-                  fontSize: "4rem",
-                  fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
+                  fontSize: "3.5rem",
+                  fontFamily: "'Arial Black', 'Impact', sans-serif",
                   color: "rgba(238, 46, 34,0.9)",
-                  fontWeight: 700,
+                  fontWeight: 900,
                   lineHeight: 1,
+                  letterSpacing: "-0.02em",
                   marginBottom: "1rem",
                 }}
               >
@@ -332,14 +383,14 @@ export default function WhyPanInfraPage() {
                 style={{
                   fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                   fontSize: "1.3rem",
-                  color: "#005c97",
+                  color: "#ffffff",
                   marginBottom: "0.75rem",
                   fontWeight: 600,
                 }}
               >
                 {phase.title}
               </h3>
-              <p style={{ fontSize: "0.95rem", lineHeight: 1.75, color: "#555555", margin: 0 }}>
+              <p style={{ fontSize: "0.95rem", lineHeight: 1.75, color: "rgba(255,255,255,0.75)", margin: 0 }}>
                 {phase.desc}
               </p>
             </div>
@@ -348,20 +399,20 @@ export default function WhyPanInfraPage() {
       </section>
 
       {/* ── 3D Service Cards Grid ─────────────────── */}
-      <section style={{ maxWidth: "1440px", margin: "0 auto", padding: "5rem 2rem", background: "#f1f5f9", borderRadius: "24px", marginBottom: "4rem" }}>
+      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "5rem 2rem", background: "rgba(0,0,0,0.12)", borderRadius: "24px", marginBottom: "4rem" }}>
         <div style={{ textAlign: "center", marginBottom: "4rem" }}>
           <h2
             style={{
               fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
               fontSize: "clamp(2rem,4vw,3.5rem)",
-              color: "#005c97",
+              color: "#ffffff",
               marginBottom: "1rem",
               fontWeight: 700,
             }}
           >
             Our Premium Offerings
           </h2>
-          <p style={{ fontSize: "1rem", color: "#666666", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
+          <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)", maxWidth: "650px", margin: "0 auto", lineHeight: 1.8 }}>
             Eight specialized real estate solutions designed for every investment need and lifestyle aspiration.
           </p>
         </div>
@@ -378,11 +429,11 @@ export default function WhyPanInfraPage() {
               <CardBody
                 className="relative"
                 style={{
-                  background: "#ffffff",
-                  border: "1px solid rgba(0, 92, 151,0.1)",
+                  background: "rgba(255,255,255,0.1)",
+                  border: "1px solid rgba(255,255,255,0.15)",
                   width: "320px",
                   height: "auto",
-                  boxShadow: "0 10px 40px rgba(0,0,0,0.04)",
+                  boxShadow: "0 10px 40px rgba(0,0,0,0.15)",
                   borderRadius: "16px",
                   overflow: "hidden"
                 }}
@@ -415,7 +466,7 @@ export default function WhyPanInfraPage() {
                       style={{
                         fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
                         fontSize: "1.25rem",
-                        color: "#005c97",
+                        color: "#ffffff",
                         fontWeight: 600,
                         lineHeight: 1.2,
                       }}
@@ -432,7 +483,7 @@ export default function WhyPanInfraPage() {
                   style={{
                     fontSize: "0.85rem",
                     lineHeight: 1.75,
-                    color: "#555555",
+                    color: "rgba(255,255,255,0.75)",
                     padding: "0 1.5rem",
                     margin: 0,
                   }}
@@ -474,7 +525,7 @@ export default function WhyPanInfraPage() {
       </section>
 
       {/* ── Final CTA ─────────────────────────────── */}
-      <section style={{ background: "#005c97", padding: "6rem 2.5rem", borderTop: "1px solid rgba(238, 46, 34,0.12)" }}>
+      <section style={{ background: "#0A1628", padding: "6rem 2.5rem", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22", marginBottom: "1.5rem" }}>
             Ready to invest in Hyderabad real estate?

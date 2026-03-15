@@ -40,7 +40,7 @@ export default function AboutSection() {
         {/* Year badge */}
         <div style={{
           position: "absolute", bottom: "-2rem", right: "2rem",
-          background: "#005c97", padding: "2rem", textAlign: "center",
+          background: "#ee2e22", padding: "2rem", textAlign: "center",
           border: "1px solid rgba(255, 255, 255, 0.3)"
         }}>
           <span style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#ffffff", lineHeight: 1 }}>2010</span>
@@ -55,14 +55,14 @@ export default function AboutSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.9, delay: 0.2 }}
       >
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", marginBottom: "1.5rem" }}>About Us</p>
-        <h2 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(2.5rem,5.5vw,4.5rem)", lineHeight: 0.95, color: "#005c97", marginBottom: "2.5rem", fontWeight: 800 }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", marginBottom: "1.5rem" }}>OUR ESTABLISHMENT</p>
+        <h2 style={{ fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)", fontSize: "clamp(2.5rem,5.5vw,4.5rem)", lineHeight: 0.95, color: "#ffffff", marginBottom: "2.5rem", fontWeight: 800 }}>
           Building Dreams <br /> Across Hyderabad
         </h2>
-        <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "#555555", marginBottom: "1.5rem" }}>
+        <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "rgba(255,255,255,0.75)", marginBottom: "1.5rem" }}>
           Pan Infra is Hyderabad&apos;s most trusted real estate developer, delivering HMDA &amp; DTCP approved premium plots, luxury villas, and gated communities since 2010.
         </p>
-        <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "#555555", marginBottom: "3rem" }}>
+        <p style={{ fontSize: "1rem", lineHeight: 1.8, color: "rgba(255,255,255,0.75)", marginBottom: "3rem" }}>
           From carefully chosen growth corridors to transparent transactions and clear title deeds — we deliver real estate that creates lasting wealth and exceptional living experiences.
         </p>
 
@@ -70,7 +70,7 @@ export default function AboutSection() {
         <div style={{ display: "flex", gap: "3.5rem", marginBottom: "3rem" }}>
           {[{ n: "1,000+", l: "Families" }, { n: "800+", l: "Acres" }, { n: "15+", l: "Projects" }].map(s => (
             <div key={s.l}>
-              <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.25rem", color: "#005c97", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
+              <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.25rem", color: "#ffffff", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
               <div style={{ fontSize: "0.55rem", letterSpacing: "0.15em", color: "#ee2e22", marginTop: "0.4rem" }}>{s.l}</div>
             </div>
           ))}
@@ -81,12 +81,12 @@ export default function AboutSection() {
           style={{
             display: "inline-flex", alignItems: "center", gap: "0.75rem",
             fontSize: "0.75rem", letterSpacing: "0.25em",
-            textDecoration: "none", color: "#005c97", borderBottom: "2px solid #005c97",
+            textDecoration: "none", color: "#ffffff", borderBottom: "2px solid rgba(255,255,255,0.5)",
             paddingBottom: "4px", transition: "color 0.25s, border-color 0.25s",
             fontWeight: 800,
           }}
           onMouseEnter={e => { e.currentTarget.style.color = "#ee2e22"; e.currentTarget.style.borderColor = "#ee2e22"; }}
-          onMouseLeave={e => { e.currentTarget.style.color = "#005c97"; e.currentTarget.style.borderColor = "#005c97"; }}
+          onMouseLeave={e => { e.currentTarget.style.color = "#ffffff"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.5)"; }}
         >
           Discover Our Story →
         </Link>

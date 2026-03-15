@@ -13,24 +13,25 @@ export default function InstaFeed() {
     }, []);
 
     return (
-        <section style={{ padding: "5rem 2.5rem 7rem", background: "#ffffff" }}>
-            <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+        <section style={{ padding: "8rem 2.5rem 9rem" }}>
+            <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
 
                 {/* Header */}
-                <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-                    <p style={{ fontSize: "0.65rem", letterSpacing: "0.3em", color: "#ee2e22",  fontWeight: 700, marginBottom: "1rem" }}>
+                <div style={{ textAlign: "center", marginBottom: "5rem" }}>
+                    <p style={{ fontSize: "0.7rem", letterSpacing: "0.35em", color: "#ee2e22", fontWeight: 700, marginBottom: "1.25rem", textTransform: "uppercase" }}>
                         Follow Us On Instagram
                     </p>
                     <h2 style={{
                         fontFamily: "var(--font-playfair, 'Playfair Display', Georgia, serif)",
-                        fontSize: "clamp(2rem, 5vw, 3.75rem)",
-                        color: "#005c97",
-                        marginBottom: "1.5rem",
+                        fontSize: "clamp(2.5rem, 5.5vw, 4.5rem)",
+                        color: "#ffffff",
+                        marginBottom: "1.75rem",
                         lineHeight: 1,
+                        fontWeight: 800,
                     }}>
                         @paninfra
                     </h2>
-                    <div style={{ width: "80px", height: "1px", background: "#ee2e22", margin: "0 auto" }} />
+                    <div style={{ width: "80px", height: "2px", background: "#ee2e22", margin: "0 auto" }} />
                 </div>
 
                 {/* Embed — centered */}
@@ -45,7 +46,7 @@ export default function InstaFeed() {
                             borderRadius: "3px",
                             boxShadow: "0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)",
                             margin: "0 auto",
-                            maxWidth: "540px",
+                            maxWidth: "800px",
                             minWidth: "326px",
                             width: "100%",
                             padding: "0",

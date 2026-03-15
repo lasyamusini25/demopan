@@ -33,8 +33,8 @@ export default function AboutPage() {
       />
       {/* Dark hero */}
       <section style={{
-        background: "#005c97",
-        padding: "10rem 2.5rem 7rem",
+        background: "#0A1628",
+        padding: "6rem 2.5rem 4rem",
         overflow: "hidden",
         position: "relative",
       }}>
@@ -69,7 +69,7 @@ export default function AboutPage() {
       {/* Philosophy — split layout */}
       <section style={{
         maxWidth: "900px", margin: "0 auto",
-        padding: "10rem 2.5rem",
+        padding: "5rem 2.5rem",
         textAlign: "center",
       }}>
         <div style={{ marginBottom: "5rem" }}>
@@ -77,28 +77,28 @@ export default function AboutPage() {
           <h2 style={{
             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
             fontSize: "clamp(2.2rem,5vw,3.75rem)",
-            lineHeight: 1.1, color: "#005c97", marginBottom: "2.5rem",
+            lineHeight: 1.1, color: "#ffffff", marginBottom: "2.5rem",
           }}>
             Real Estate That Builds Real Wealth
           </h2>
-          <p style={{ fontSize: "1.05rem", lineHeight: 1.9, color: "#555555", marginBottom: "1.5rem", maxWidth: "700px", margin: "0 auto 1.5rem" }}>
+          <p style={{ fontSize: "1.05rem", lineHeight: 1.9, color: "rgba(255,255,255,0.75)", marginBottom: "1.5rem", maxWidth: "700px", margin: "0 auto 1.5rem" }}>
             At Pan Infra, we believe every family deserves access to premium real estate with complete transparency, legal clarity, and lasting appreciation potential.
           </p>
-          <p style={{ fontSize: "1.05rem", lineHeight: 1.9, color: "#555555", marginBottom: "3.5rem", maxWidth: "700px", margin: "0 auto 3.5rem" }}>
+          <p style={{ fontSize: "1.05rem", lineHeight: 1.9, color: "rgba(255,255,255,0.75)", marginBottom: "3.5rem", maxWidth: "700px", margin: "0 auto 3.5rem" }}>
             Every project begins with deep location research — understanding infrastructure pipelines, government master plans, and the long-term growth potential before a single plot is offered.
           </p>
           <div style={{ display: "flex", gap: "4rem", flexWrap: "wrap", justifyContent: "center" }}>
             {[{ n: "1,000+", l: "Families" }, { n: "800+", l: "Acres" }, { n: "15+", l: "Projects" }].map(s => (
               <div key={s.l} style={{ textAlign: "center" }}>
-                <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#005c97", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
+                <div style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#ffffff", fontWeight: 600, lineHeight: 1 }}>{s.n}</div>
                 <div style={{ fontSize: "0.6rem", letterSpacing: "0.2em",  color: "#ee2e22", marginTop: "0.5rem" }}>{s.l}</div>
               </div>
             ))}
           </div>
         </div>
 
-        <div style={{ position: "relative", marginTop: "6rem" }}>
-          <div style={{ position: "relative", height: "600px", overflow: "hidden", borderRadius: "1.5rem", background: "#ece8e2" }} className="img-zoom">
+        <div style={{ position: "relative", marginTop: "3rem" }}>
+          <div style={{ position: "relative", height: "380px", overflow: "hidden", borderRadius: "1.5rem", background: "rgba(0,0,0,0.2)" }} className="img-zoom">
             <div className="zoom-inner" style={{ position: "absolute", inset: 0 }}>
               <Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="Pan Infra real estate development Hyderabad" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 80vw" />
             </div>
@@ -122,13 +122,13 @@ export default function AboutPage() {
 
 
       {/* Timeline */}
-      <section style={{ maxWidth: "900px", margin: "0 auto", padding: "10rem 2.5rem" }} aria-label="Timeline">
-        <div style={{ textAlign: "center", marginBottom: "6rem" }}>
+      <section style={{ maxWidth: "900px", margin: "0 auto", padding: "5rem 2.5rem" }} aria-label="Timeline">
+        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <p style={{ fontSize: "0.6rem", letterSpacing: "0.4em", color: "#ee2e22",  marginBottom: "1.5rem" }}>Our Journey</p>
           <h2 style={{
             fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",
             fontSize: "clamp(2.2rem,5vw,3.75rem)",
-            lineHeight: 1, color: "#005c97",
+            lineHeight: 1, color: "#ffffff",
           }}>
             Company Milestones
           </h2>
@@ -138,8 +138,8 @@ export default function AboutPage() {
             {TIMELINE.map((item) => (
               <li key={item.year} style={{
                 display: "grid", gridTemplateColumns: "100px 1fr",
-                gap: "3rem", padding: "3rem 0",
-                borderTop: "1px solid rgba(0,0,0,0.07)",
+                gap: "2rem", padding: "1.75rem 0",
+                borderTop: "1px solid rgba(255,255,255,0.1)",
                 alignItems: "start",
                 textAlign: "left",
               }}>
@@ -148,7 +148,7 @@ export default function AboutPage() {
                   fontSize: "1.5rem", color: "#ee2e22", fontWeight: 600,
                   lineHeight: 1,
                 }}>{item.year}</p>
-                <p style={{ fontSize: "1.05rem", color: "#555555", lineHeight: 1.85 }}>{item.text}</p>
+                <p style={{ fontSize: "1.05rem", color: "rgba(255,255,255,0.75)", lineHeight: 1.85 }}>{item.text}</p>
               </li>
             ))}
           </ol>
@@ -156,7 +156,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA band */}
-      <section style={{ background: "#005c97", padding: "6rem 2.5rem", textAlign: "center" }}>
+      <section style={{ background: "#0A1628", padding: "4rem 2.5rem", textAlign: "center", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <p style={{ fontSize: "0.6rem", letterSpacing: "0.45em", color: "rgba(255,255,255,0.7)",  marginBottom: "1.5rem" }}>Book a Site Visit</p>
         <h2 style={{
           fontFamily: "var(--font-playfair,'Playfair Display',Georgia,serif)",

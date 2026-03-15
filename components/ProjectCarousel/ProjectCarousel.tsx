@@ -115,7 +115,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
           marginBottom: "1.5rem",
         }}>
           Premium Land,{" "}
-          <span style={{ color: "#005c97" }}>Timeless Value</span>
+          <span style={{ color: "#ee2e22" }}>Timeless Value</span>
         </h2>
         <Link
           href="/projects"

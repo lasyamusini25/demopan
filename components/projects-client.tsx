@@ -23,9 +23,9 @@ export default function ProjectsClient() {
             onClick={() => setFilter(item)}
             style={{
               padding: "0.5rem 1.25rem",
-              border: filter === item ? "1px solid #ee2e22" : "1px solid rgba(0,0,0,0.15)",
+              border: filter === item ? "1px solid #ee2e22" : "1px solid rgba(255,255,255,0.2)",
               background: filter === item ? "#ee2e22" : "transparent",
-              color: filter === item ? "#ffffff" : "#005c97",
+              color: filter === item ? "#ffffff" : "rgba(255,255,255,0.8)",
               fontSize: "0.65rem",
               letterSpacing: "0.15em",
               
@@ -47,11 +47,15 @@ export default function ProjectsClient() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
-          style={{ columns: "1", columnGap: "1.5rem" }}
-          className="md:columns-2 lg:columns-3"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gap: "1.5rem",
+          }}
+          className="grid-cols-1 md:grid-cols-2"
         >
           {projects.map((project, i) => (
-            <ProjectCard key={project.slug} project={project} index={i} />
+            <ProjectCard key={project.slug} project={project} index={i} cardAspectRatio="1/1" />
           ))}
         </motion.div>
       </AnimatePresence>

@@ -12,27 +12,29 @@ export default function CTASection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
+        whileHover={{ boxShadow: "0 24px 64px rgba(238,46,34,0.12), 0 0 0 1px rgba(238,46,34,0.2)" }}
         style={{
-          background: "linear-gradient(135deg, #005c97 0%, #004a7a 50%, #005c97 100%)",
+          background: "rgba(255,255,255,0.04)",
           padding: "5rem 4rem",
           position: "relative",
           overflow: "hidden",
-          border: "1px solid rgba(255, 255, 255, 0.15)",
+          border: "1px solid rgba(255,255,255,0.1)",
+          borderRadius: "4px",
         }}
       >
         {/* Decorative element */}
         <div style={{
-          position: "absolute", top: 0, right: 0, width: "280px", height: "280px",
-          background: "radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%)",
+          position: "absolute", top: 0, right: 0, width: "400px", height: "400px",
+          background: "radial-gradient(circle, rgba(238,46,34,0.06) 0%, transparent 70%)",
           pointerEvents: "none",
         }} />
         <div style={{
           position: "absolute", bottom: "-3rem", left: "-3rem", width: "200px", height: "200px",
-          border: "1px solid rgba(238, 46, 34,0.1)", borderRadius: "50%",
+          border: "1px solid rgba(238, 46, 34, 0.08)", borderRadius: "50%",
           pointerEvents: "none",
         }} />
 
-        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "rgba(255, 255, 255, 0.7)",  marginBottom: "1.5rem" }}>
+        <p style={{ fontSize: "0.6rem", letterSpacing: "0.38em", color: "#ee2e22", marginBottom: "1.5rem" }}>
           Book a Site Visit
         </p>
         <h2
@@ -43,11 +45,12 @@ export default function CTASection() {
             color: "#ffffff",
             marginBottom: "2.5rem",
             maxWidth: "720px",
+            fontWeight: 800,
           }}
         >
           Find your perfect plot or villa in Hyderabad.
         </h2>
-        <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.6)", maxWidth: "480px", lineHeight: 1.75, marginBottom: "3rem" }}>
+        <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.65)", maxWidth: "480px", lineHeight: 1.75, marginBottom: "3rem" }}>
           Book a free site visit and let our experts guide you to the ideal property in Hyderabad&apos;s most promising growth corridors.
         </p>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -75,19 +78,19 @@ export default function CTASection() {
             href="/contact"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
-              fontSize: "0.65rem", letterSpacing: "0.2em", 
+              fontSize: "0.65rem", letterSpacing: "0.2em",
               textDecoration: "none", padding: "1.2rem 2.75rem",
-              border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.7)",
+              border: "1px solid rgba(255,255,255,0.3)", color: "#ffffff",
               transition: "all 0.3s",
               fontWeight: 800,
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.borderColor = "#ffffff";
-              e.currentTarget.style.color = "#ffffff";
+              e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+              e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)";
             }}
             onMouseLeave={e => {
+              e.currentTarget.style.background = "transparent";
               e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)";
-              e.currentTarget.style.color = "rgba(255,255,255,0.7)";
             }}
           >
             Enquire →
@@ -96,19 +99,19 @@ export default function CTASection() {
             href="/projects"
             style={{
               display: "inline-flex", alignItems: "center", gap: "0.5rem",
-              fontSize: "0.65rem", letterSpacing: "0.2em", 
+              fontSize: "0.65rem", letterSpacing: "0.2em",
               textDecoration: "none", padding: "1.2rem 2.5rem",
-              border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.7)",
+              border: "1px solid rgba(255,255,255,0.3)", color: "#ffffff",
               transition: "all 0.3s",
               fontWeight: 800,
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.borderColor = "#ffffff";
-              e.currentTarget.style.color = "#ffffff";
+              e.currentTarget.style.background = "rgba(255,255,255,0.08)";
+              e.currentTarget.style.borderColor = "rgba(255,255,255,0.6)";
             }}
             onMouseLeave={e => {
+              e.currentTarget.style.background = "transparent";
               e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)";
-              e.currentTarget.style.color = "rgba(255,255,255,0.7)";
             }}
           >
             View Our Work
