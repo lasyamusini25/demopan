@@ -15,9 +15,10 @@ export default function GoogleReviews() {
   useEffect(() => {
     // Re-process widget if Elfsight script already loaded (page nav)
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    if (typeof window !== "undefined" && (window as any).eapps) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).eapps.AppsManager.initialize();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const eapps = (window as any).eapps;
+    if (eapps?.AppsManager?.initialize) {
+      eapps.AppsManager.initialize();
     }
   }, []);
 
