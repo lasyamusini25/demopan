@@ -30,7 +30,7 @@ export default function Navbar() {
         right: 0,
         zIndex: 50,
         borderBottom: scrolled ? "1px solid rgba(0,0,0,0.06)" : "1px solid transparent",
-        background: scrolled ? "rgba(255,255,255,0.94)" : "transparent",
+        background: scrolled ? "rgba(255,255,242,0.96)" : "transparent",
         backdropFilter: scrolled ? "blur(14px)" : "none",
         transition: "all 0.4s ease",
       }}
@@ -175,8 +175,8 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             style={{
               overflow: "hidden",
-              background: "#ffffff",
-              borderTop: "1px solid rgba(0,0,0,0.07)",
+              background: "#FFFFF2",
+              borderTop: "1px solid rgba(0,92,151,0.1)",
             }}
           >
             <ul style={{ listStyle: "none", padding: "3rem 1.25rem", margin: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: "1.75rem" }}>

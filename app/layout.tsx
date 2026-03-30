@@ -24,7 +24,14 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700", "900"],
 });
 
-export const metadata: Metadata = defaultMetadata;
+export const metadata: Metadata = {
+  ...defaultMetadata,
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
+};
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (

@@ -38,7 +38,7 @@ const features = [
 
 export default function WhyPanInfraStrip() {
   return (
-    <section style={{ background: "#0a1628", padding: "7rem 2.5rem" }}>
+    <section style={{ background: "#005c97", padding: "7rem 2.5rem" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
 
         {/* Header */}
@@ -61,7 +61,7 @@ export default function WhyPanInfraStrip() {
             marginBottom: "1.75rem",
           }}>
             The Best Real Estate Company in{" "}
-            <span style={{ color: "#4da6ff" }}>Hyderabad</span>
+            <span style={{ color: "#ffffff" }}>Hyderabad</span>
           </h2>
           <p style={{
             fontSize: "1.05rem", lineHeight: 1.8, color: "rgba(255,255,255,0.6)",
@@ -90,14 +90,14 @@ export default function WhyPanInfraStrip() {
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(0,92,151,0.5)";
-                (e.currentTarget as HTMLDivElement).style.background = "rgba(0,92,151,0.08)";
+                (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.08)";
               }}
               onMouseLeave={e => {
                 (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255,255,255,0.08)";
                 (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.04)";
               }}
             >
-              <div style={{ color: "#4da6ff", marginBottom: "1.25rem", display: "flex", justifyContent: "center" }}>
+              <div style={{ color: "#ffffff", marginBottom: "1.25rem", display: "flex", justifyContent: "center" }}>
                 {f.icon}
               </div>
               <h3 style={{

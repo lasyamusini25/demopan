@@ -202,23 +202,6 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    slug: "dukes-western-county",
-    title: "Dukes Western County",
-    category: "Premium Villas",
-    coverImage: "/covers/Dukes_western_county.png",
-    heroImage: "/covers/Dukes_western_county.png",
-    location: "Shankarpally, Hyderabad",
-    year: "2024",
-    client: "Open for Booking",
-    area: "75 Acres · 300 Plots",
-    description:
-      "Dukes Western County brings premium open villa plots to the rapidly appreciating Shankarpally corridor — the preferred address for Hyderabad's western growth story. Set amidst clean air and wide open landscapes, these HMDA-approved villa plots offer generous plot sizes, tree-lined avenues, and proximity to top IT hubs, schools, and hospitals.",
-    gallery: [
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=1200",
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
-    ],
-  },
-  {
     slug: "dukes-county",
     title: "Dukes County",
     category: "Residential Plots",

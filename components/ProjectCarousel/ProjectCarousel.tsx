@@ -7,9 +7,9 @@ import { Project } from "@/lib/constants";
 
 const BADGE_MAP: Record<string, string> = {
   "Residential Plots": "HMDA & DTCP Approved",
-  "Gated Community":   "Open for Registration",
-  "Premium Villas":    "New Launch",
-  "Commercial":        "Prime Location",
+  "Gated Community": "Open for Registration",
+  "Premium Villas": "New Launch",
+  "Commercial": "Prime Location",
 };
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -56,7 +56,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 fontWeight: 700,
                 letterSpacing: "0.04em",
                 color: "#ffffff",
-                background: "#005c97",
+                background: "#ee2e22",
                 borderRadius: "9999px",
                 padding: "0.35rem 0.9rem",
                 whiteSpace: "nowrap",
@@ -93,7 +93,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export default function ProjectCarousel({ projects }: { projects: Project[] }) {
   return (
-    <section style={{ background: "#0a1628", padding: "6rem 5vw" }} aria-label="Featured projects">
+    <section style={{ background: "#005c97", padding: "6rem 5vw" }} aria-label="Featured projects">
 
       {/* Header */}
       <motion.div
@@ -115,7 +115,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
           marginBottom: "1.5rem",
         }}>
           Premium Land,{" "}
-          <span style={{ color: "#ee2e22" }}>Timeless Value</span>
+          <span style={{ color: "#ffffff" }}>Timeless Value</span>
         </h2>
         <Link
           href="/projects"

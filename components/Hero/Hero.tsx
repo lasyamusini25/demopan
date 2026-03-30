@@ -236,31 +236,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* ── YEAR BADGE (centered on hero) ─────────────────── */}
-      <motion.div
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "3rem",
-          transform: "translateY(-50%)",
-          textAlign: "center",
-          zIndex: 2,
-        }}
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1.6, duration: 0.7 }}
-      >
-        <div style={{
-          background: "rgba(0,0,0,0.55)",
-          backdropFilter: "blur(12px)",
-          border: "1px solid rgba(0, 92, 151, 0.3)",
-          padding: "1.5rem 2rem",
-        }}>
-          <p style={{ fontSize: "0.55rem", letterSpacing: "0.4em", color: "#ee2e22", marginBottom: "0.5rem" }}>Est.</p>
-          <p style={{ fontFamily: "var(--font-playfair,Georgia,serif)", fontSize: "2.5rem", color: "#ffffff", lineHeight: 1, fontWeight: 600 }}>2010</p>
-        </div>
-      </motion.div>
-
       {/* ── STATS STRIP ───────────────────────────────────── */}
       <motion.div
         style={{
